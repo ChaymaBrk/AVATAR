@@ -1,11 +1,13 @@
 import streamlit as st
 import boto3
 import os
-
 from langchain_community.vectorstores import FAISS
-from langchain_aws import BedrockEmbeddings, ChatBedrock   
+from langchain_aws import BedrockEmbeddings, ChatBedrock
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
+from langchain.schema import HumanMessage, AIMessage  # Pour gérer les messages de chat
+from langchain_core.runnables import RunnablePassthrough
+from langchain_core.output_parsers import StrOutputParser
 
 # Configuration des variables d'environnement
 os.environ['AWS_ACCESS_KEY_ID'] = 'AKIATWBJZ4G6IN7JILVW'
@@ -34,14 +36,30 @@ folder_path = "/tmp/"
 def get_response(llm, faiss_index, question):
     prompt_template = """
 
-    Human: Use the following pieces of context to provide a concise answer to the question at the end.
-    If you don't know the answer, just say that you don't know, don't try to make up an answer.
+    You are an AI assistant specialized in legal question-answering tasks. Your role is to provide accurate, concise, and well-structured responses based on the retrieved legal context. Follow these guidelines:
 
-    {context}
+1. **Contextual Understanding**:
+   - Use the provided legal context to answer the question. If the context is insufficient or irrelevant, clearly state that you don't know the answer. Do not make up information.
 
-    Question: {question}
+2. **Level of Detail**:
+   - If the question is broad, complex, or requires explanation (e.g., interpretation of a law or legal principle), provide a detailed and well-structured response. Include examples, legal references, or relevant case law where applicable.
+   - If the question is straightforward or factual (e.g., a specific article of a law), provide a concise and direct response.
 
-    Assistant:
+3. **Legal Precision**:
+   - Ensure that your answers are legally accurate and avoid ambiguous language.
+   - If the question involves interpretation, clarify whether your response is based on the provided context or general legal principles.
+
+4. **Ethical Responsibility**:
+   - If the question involves sensitive legal matters (e.g., personal legal advice), remind the user to consult a qualified legal professional.
+
+5. **Formatting**:
+   - Use clear and professional language. Structure your response with headings, bullet points, or numbered lists when appropriate to improve readability.
+
+Context: {context}  
+Question: {question}  
+
+Answer:
+
     """
 
     PROMPT = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
@@ -54,7 +72,7 @@ def get_response(llm, faiss_index, question):
         chain_type_kwargs={"prompt": PROMPT}
     )
 
-    answer = qa.invoke({"query": question})  # Utilisation de invoke au lieu de __call__
+    answer = qa.invoke({"query": question})  # Utilisation de invoke avec la clé "query"
     return answer['result']
 
 def get_llm():
@@ -63,42 +81,152 @@ def get_llm():
         client=bedrock_client)
     return llm
 
-def load_index():
-    s3_client.download_file(
-        Filename=f"{folder_path}my_faiss.faiss",
-        Bucket=BUCKET_NAME,
-        Key="my_faiss.faiss"
-    )
+def load_all_indices():
+    # Lister tous les fichiers dans le bucket
+    response = s3_client.list_objects_v2(Bucket=BUCKET_NAME)
+    if 'Contents' not in response:
+        st.error("No files found in the bucket.")
+        return None
 
-    s3_client.download_file(
-        Filename=f"{folder_path}my_faiss.pkl",
-        Bucket=BUCKET_NAME,
-        Key="my_faiss.pkl"
+    # Télécharger tous les fichiers .faiss et .pkl
+    for obj in response['Contents']:
+        key = obj['Key']
+        if key.endswith('.faiss') or key.endswith('.pkl'):
+            local_path = os.path.join(folder_path, key)
+            s3_client.download_file(
+                Filename=local_path,
+                Bucket=BUCKET_NAME,
+                Key=key
+            )
+
+def create_conversation_chain(retriever):
+    prompt_template = """
+
+    You are an AI assistant specialized in legal question-answering tasks. Your role is to provide accurate, concise, and well-structured responses based on the retrieved legal context. Follow these guidelines:
+
+1. **Contextual Understanding**:
+   - Use the provided legal context to answer the question. If the context is insufficient or irrelevant, clearly state that you don't know the answer. Do not make up information.
+
+2. **Level of Detail**:
+   - If the question is broad, complex, or requires explanation (e.g., interpretation of a law or legal principle), provide a detailed and well-structured response. Include examples, legal references, or relevant case law where applicable.
+   - If the question is straightforward or factual (e.g., a specific article of a law), provide a concise and direct response.
+
+3. **Legal Precision**:
+   - Ensure that your answers are legally accurate and avoid ambiguous language.
+   - If the question involves interpretation, clarify whether your response is based on the provided context or general legal principles.
+
+4. **Ethical Responsibility**:
+   - If the question involves sensitive legal matters (e.g., personal legal advice), remind the user to consult a qualified legal professional.
+
+5. **Formatting**:
+   - Use clear and professional language. Structure your response with headings, bullet points, or numbered lists when appropriate to improve readability.
+
+Context: {context}  
+Question: {question}  
+
+Answer:
+
+    """
+
+    prompt = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
+    llm = get_llm()
+
+    def format_context(inputs):
+        docs = retriever.invoke(inputs["question"])
+        return {
+            **inputs,
+            "context": "\n\n".join([doc.page_content for doc in docs])
+        }
+
+    chain = (
+        RunnablePassthrough() 
+        | format_context
+        | prompt
+        | llm
+        | StrOutputParser()
     )
+    
+    return chain
 
 def main():
     st.header("This is client side PDF Chat bot")
 
-    load_index()
+    # Initialiser l'état de la session
+    if "chat_history" not in st.session_state:
+        st.session_state.chat_history = []
+    if "retriever" not in st.session_state:
+        st.session_state.retriever = None
+    if "conversation" not in st.session_state:
+        st.session_state.conversation = None
 
-    dir_list = os.listdir("/tmp/")
+    load_all_indices()
+
+    dir_list = os.listdir(folder_path)
     st.write("Files in /tmp/ directory")
     st.write(dir_list)
 
-    faiss_index = FAISS.load_local(
-        index_name="my_faiss",
-        folder_path=folder_path,
-        embeddings=bedrock_embeddings,
-        allow_dangerous_deserialization=True
-    )
+    # Charger tous les indices FAISS
+    faiss_indices = []
+    for file in dir_list:
+        if file.endswith('.faiss'):
+            index_name = file[:-6]  # Enlever l'extension .faiss
+            try:
+                faiss_index = FAISS.load_local(
+                    index_name=index_name,
+                    folder_path=folder_path,
+                    embeddings=bedrock_embeddings,
+                    allow_dangerous_deserialization=True
+                )
+                faiss_indices.append(faiss_index)
+            except Exception as e:
+                st.error(f"Failed to load index {index_name}: {e}")
 
-    st.write("Vector store loaded successfully")
-    question = st.text_input("Enter your question")
-    if st.button("Get Response"):
-        with st.spinner("Getting response..."):
-            llm = get_llm()
-            st.write(get_response(llm, faiss_index, question))
-            st.success("Done!")
+    if not faiss_indices:
+        st.error("No valid FAISS indices found.")
+        return
+
+    st.write("Vector stores loaded successfully")
+
+    # Fusionner tous les indices FAISS en un seul
+    combined_index = faiss_indices[0]
+    for index in faiss_indices[1:]:
+        combined_index.merge_from(index)
+
+    # Créer le retriever et la chaîne de conversation
+    if st.session_state.retriever is None:
+        st.session_state.retriever = combined_index.as_retriever(search_kwargs={"k": 3})
+        st.session_state.conversation = create_conversation_chain(st.session_state.retriever)
+
+    # Main chat interface
+    if st.session_state.conversation is None:
+        st.info("Please upload and process documents to start asking questions.")
+        return
+
+    # Display chat history
+    for message in st.session_state.chat_history:
+        with st.chat_message("Human" if isinstance(message, HumanMessage) else "AI"):
+            st.markdown(message.content)
+
+    # Chat input
+    query = st.chat_input("Ask a question about your documents")
+    if query:
+        st.session_state.chat_history.append(HumanMessage(content=query))
+        
+        # Display user message
+        with st.chat_message("Human"):
+            st.markdown(query)
+
+        # Generate and display AI response
+        with st.chat_message("AI"):
+            response = ""
+            response_container = st.empty()
+            
+            for chunk in st.session_state.conversation.stream({"question": query}):
+                response += chunk
+                response_container.markdown(response)
+            
+            # Add AI response to chat history
+            st.session_state.chat_history.append(AIMessage(content=response))
 
 if __name__ == "__main__":
     main()
