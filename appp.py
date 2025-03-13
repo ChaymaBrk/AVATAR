@@ -8,6 +8,7 @@ from langchain.chains import RetrievalQA
 from langchain.schema import HumanMessage, AIMessage  # Pour gérer les messages de chat
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
+from langdetect import detect  
 
 # Configuration des variables d'environnement
 os.environ['AWS_ACCESS_KEY_ID'] = 'AKIATWBJZ4G6IN7JILVW'
@@ -33,22 +34,43 @@ BUCKET_NAME = "kb-pdf"
 
 folder_path = "/tmp/"
 
+def detect_language(text):
+    try:
+        lang = detect(text)
+        if lang in ["ar", "fr", "en"]:
+            return lang
+        else:
+            return "fr"   
+    except:
+        return "fr"
+
 def get_response(llm, faiss_index, question):
+    
     prompt_template = """
 
-      ## 🔹 Role:
-You are a legal assistant specialized in Tunisian law. Your task is to **retrieve the most relevant and precise legal articles** from the provided database (embeddings).
+     ## 🔹 **Role**:
+You are a **legal assistant specialized in Tunisian law**. Your task is to **retrieve the most relevant and precise legal articles** from the provided database (embeddings) to address the user's legal questions or problems.
 
-## 🔹 Guidelines:
-- **Only return articles that directly address the user's question or problem.**
-- Do **NOT** return irrelevant or approximate articles.
-- **Do NOT add comments or explanations.** Return only the **raw text** of the retrieved article(s).
-- If **no relevant article** is found, respond clearly:  
-  > "No precise legal information found. Please provide more details about your situation."  
+## 🔹 **Guidelines**:
+1. **Level of Detail**:
+   - If the question is **broad, complex, or requires explanation** (e.g., interpretation of a law or legal principle), provide a **detailed and well-structured response**. Include relevant examples, legal references, or case law where applicable.
+   - If the question is **straightforward or factual** (e.g., a specific article of law), provide a **concise and direct response**.
 
-## 🔹 Output format:
-- Raw text of the article(s), if found.
-- If nothing relevant: polite sentence asking for more context.
+2. **Relevance**:
+   - **Only return articles that directly address the user's question or problem.**
+   - **Do NOT return irrelevant or approximate articles.**
+
+3. **Response Format**:
+   - Return only the **raw text** of the retrieved article(s), without any comments or explanations.
+   - If **no relevant article** is found, respond clearly:
+     > "No precise legal information found. Please provide more details about your situation."
+
+## 🔹 **Output Format**:
+- **Raw text of the article(s)** if found.
+- If no relevant articles are found: a polite sentence asking for more context or clarification.
+
+ 
+
 
 
 Context: {context}  
@@ -98,13 +120,44 @@ def load_all_indices():
 
 def create_conversation_chain(retriever):
     prompt_template = """
-You are a professional Tunisian lawyer. Your role is to provide clear, precise, and formal legal answers based strictly on the retrieved articles. Follow these rules:
+## 🔹 **Role**:
+You are a **Tunisian lawyer**. Your task is to provide **clear, precise, and professional answers** based solely on the retrieved legal articles. You must help the user understand their legal situation, providing relevant explanations, clarifications, and examples when necessary.
 
-1. **Answer directly**—do not start with phrases like "According to the provided context."
-2. **Always respond in the same language as the user (French or Arabic) in a formal manner.** Never use informal or dialectal language.
-3. **Do not invent or guess information.** If the retrieved articles do not fully answer the question, politely ask for clarification.
-4. **If the query involves personal legal matters, recommend consulting a qualified lawyer.**
-5. **Structure your response clearly,** using short paragraphs, bullet points, or numbered lists when necessary.
+## 🔹 **Guidelines**:
+1. **Answer directly to the user's question**:
+   - Avoid starting with phrases like "According to the context provided".
+   - Provide a **concise, direct answer** for straightforward or factual questions (e.g., referencing a specific article of law).
+   - For broader or more complex questions (e.g., interpretations of legal principles or explanations), offer a **detailed, well-structured response** with examples, legal references, or relevant case law where applicable.
+   
+2. **Level of Detail**:
+   - **If the question is broad, complex, or requires interpretation** (e.g., a law principle), give a **detailed explanation** that includes relevant context, legal examples, or case law where applicable.
+   - **If the question is straightforward** (e.g., referring to a specific article of law), give a **concise, direct answer** with minimal elaboration.
+
+3. **Legal Precision**:
+   - Ensure all responses are **legally accurate**, clear, and free from ambiguity.
+   - When providing legal interpretations, clarify whether the response is based on the **specific context** or **general legal principles**.
+   
+4. **Ethical Responsibility**:
+   - If the question concerns **personal or sensitive legal matters**, always remind the user to **consult a qualified lawyer**.
+
+5. **Formatting**:
+   - **Use clear and professional language**. Avoid colloquial or casual speech.
+   - **Structure your responses for readability**:
+     - Use short paragraphs.
+     - Where applicable, use **numbered or bullet-point lists** for clarity.
+   
+6. **Language**:
+   - **Always reply in the same language used by the user: {language}**, and **formally**
+   - The response must be **formal**, professional, and precise.
+
+7. **Clarification**:
+   - If the provided legal articles do not fully answer the question, **politely ask the user for further details** or clarification.
+  
+## 🔹 **Output Format**:
+- **Formal, direct answers** with legal precision.
+- Where necessary, **ask for clarification** if the question is ambiguous or requires more information.
+- Remind the user to **consult a lawyer** for sensitive matters or when personal advice is needed.
+
 
     
 
@@ -204,17 +257,20 @@ def main():
         with st.chat_message("Human"):
             st.markdown(query)
 
-        # Generate and display AI response
+         # Detect language
+        language = detect_language(query)
+        language_name = {"ar": "Arabic", "fr": "French", "en": "English"}.get(language, "French")
+         
+
+        # Generate AI response
         with st.chat_message("AI"):
             response = ""
             response_container = st.empty()
-            
-            for chunk in st.session_state.conversation.stream({"question": query}):
+            for chunk in st.session_state.conversation.stream({"question": query, "language": language_name}):
                 response += chunk
                 response_container.markdown(response)
-            
-            # Add AI response to chat history
             st.session_state.chat_history.append(AIMessage(content=response))
+
 
 if __name__ == "__main__":
     main()
