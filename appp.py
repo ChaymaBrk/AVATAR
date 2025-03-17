@@ -1,13 +1,17 @@
 import streamlit as st
 import boto3
 import os
+import sqlite3
 from langchain_community.vectorstores import FAISS
 from langchain_aws import BedrockEmbeddings, ChatBedrock
+from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
-from langchain.schema import HumanMessage, AIMessage  # Pour gérer les messages de chat
+from langchain.schema import HumanMessage, AIMessage   
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
+from langchain.memory import ConversationBufferMemory
+
 from langdetect import detect  
 
 # Configuration des variables d'environnement
@@ -15,8 +19,7 @@ os.environ['AWS_ACCESS_KEY_ID'] = 'AKIATWBJZ4G6IN7JILVW'
 os.environ['AWS_SECRET_ACCESS_KEY'] = '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'
 os.environ['AWS_DEFAULT_REGION'] = 'us-east-1'
 os.environ['BUCKET_NAME'] = 'kb-pdf'
-os.environ['API_TOKEN'] = 'IQoJb3JpZ2luX2VjEMj//////////wEaDGV1LWNlbnRyYWwtMSJGMEQCIFhvap2dp0k0Nh/9dWZW7nWZRNawgmkb8Vtv9nR1DsKaAiBhJ9kewsXYkSjEII318EP+bseL9f4pFplMwfkou9lsSSqeAwgREAAaDDI1MzQ5MDc0OTg4NCIMk2UDpqGHQcZiO0txKvsCa8EPMkJ0tmLEUy4Aww+0lVmQMmVNGw0+gR1DDLPWdwdtxVDq2/xHn5/MvntMnbu1w7blGKevzUV9WuDGRnongIjNmBzk20Z2vPRlCkTPaFHGkTB/XuEvD5NiEN189dm1TIhCAP1EYDsUv399yypEPxbQvgNXCzb9/U3nhCNnKcs0Xt0CYnOSbONbal0c3s9wsy9Ukrmx+Rt/+CnyPd+rNDna450MA93R0VGAeF/t0cqzn9s7BTSYU2ztsaZfM61/fCOdh0+lzGc4/pCnK/JbXLNV7aTzGLasGMCzOKoMM65mgudtsu9Fwj1ieAf5pic/maseBY/Lj4nP0Qxs1XhImg/aPq2b+vWANy3DFm+IBaGInOPAzbF53+o5vaoB1om0DW0HW/BLoDvJ7Lvnsb3h5FrNi41sKqOV6LuM1H5vwEQ2zFNJDm8N5PDL3Wq57F32B8gfG2gFuon1RI4Bl6qRDSN/b3lua9XilzlqPL5JN985F6eYgw9Zoe+0GTCmgKC+BjqnAbPt6XjQzHCV7BWHaeAgvFpzhd2LrdCGPYGroweyyrG7CH8tZpeI/i+b1auA128A59rxc7lM3ZBF2XfEpV/8soqtB4pCPt2Z7aUaatolhHI0q6vn8vPIFp6fD+fkhRUvtrkiVJ+FwH8mFPGJEMUHM0RfM1WoG9fBaN+Ryr/+4NGL3raGV9qiMKWdcalmh0cBr7OJMweHYO2GTB+wq4XjGay9S35Dw+U'
-
+ 
 # Initialisation du client Bedrock
 bedrock_client = boto3.client(
     service_name='bedrock-runtime',
@@ -32,29 +35,72 @@ bedrock_embeddings = BedrockEmbeddings(model_id="amazon.titan-embed-text-v2:0", 
 s3_client = boto3.client('s3')
 BUCKET_NAME = "kb-pdf"
 
-folder_path = "/tmp/"
+folder_path = "local_data/" 
+if not os.path.exists(folder_path):
+    os.makedirs(folder_path)
 
-def detect_language(text):
+# Initialisation de la base de données SQLite
+def init_db():
+    conn = sqlite3.connect('users.db')
+    c = conn.cursor()
+    c.execute('''CREATE TABLE IF NOT EXISTS users
+                 (username TEXT PRIMARY KEY, password TEXT)''')
+    c.execute('''CREATE TABLE IF NOT EXISTS threads
+                 (thread_id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT, thread_name TEXT)''')
+    conn.commit()
+    conn.close()
+
+# Ajouter un utilisateur à la base de données
+def add_user(username, password):
+    conn = sqlite3.connect('users.db')
+    c = conn.cursor()
     try:
-        lang = detect(text)
-        if lang in ["ar", "fr", "en"]:
-            return lang
-        else:
-            return "fr"   
-    except:
-        return "fr"
+        c.execute("INSERT INTO users (username, password) VALUES (?, ?)", (username, password))
+        conn.commit()
+        st.success("User registered successfully!")
+        # Créer un thread par défaut pour l'utilisateur
+        create_thread(username, "Default Thread")
+    except sqlite3.IntegrityError:
+        st.error("Username already exists. Please choose a different username.")
+    finally:
+        conn.close()
+
+# Vérifier les informations de connexion
+def authenticate(username, password):
+    conn = sqlite3.connect('users.db')
+    c = conn.cursor()
+    c.execute("SELECT * FROM users WHERE username = ? AND password = ?", (username, password))
+    result = c.fetchone()
+    conn.close()
+    return result is not None
+
+# Créer un nouveau thread pour un utilisateur
+def create_thread(username, thread_name):
+    conn = sqlite3.connect('users.db')
+    c = conn.cursor()
+    c.execute("INSERT INTO threads (username, thread_name) VALUES (?, ?)", (username, thread_name))
+    thread_id = c.lastrowid
+    conn.commit()
+    conn.close()
+    return thread_id
+
+# Récupérer tous les threads d'un utilisateur
+def get_threads(username):
+    conn = sqlite3.connect('users.db')
+    c = conn.cursor()
+    c.execute("SELECT thread_id, thread_name FROM threads WHERE username = ?", (username,))
+    threads = c.fetchall()
+    conn.close()
+    return threads
+
+
 
 def get_response(llm, faiss_index, question):
     
     prompt_template = """
 
      ## 🔹 **Role**:
-You are a **legal assistant specialized in Tunisian law**. Your task is to **retrieve the most relevant and precise legal articles** from the provided database (embeddings) to address the user's legal questions or problems.
-
-## 🔹 **Guidelines**:
-1. **Level of Detail**:
-   - If the question is **broad, complex, or requires explanation** (e.g., interpretation of a law or legal principle), provide a **detailed and well-structured response**. Include relevant examples, legal references, or case law where applicable.
-   - If the question is **straightforward or factual** (e.g., a specific article of law), provide a **concise and direct response**.
+ You are a retriver. Your task is to **retrieve relevant legal articles** based on the user's question. You must provide **clear, precise, and professional responses** that directly address the user's legal query.
 
 2. **Relevance**:
    - **Only return articles that directly address the user's question or problem.**
@@ -65,10 +111,7 @@ You are a **legal assistant specialized in Tunisian law**. Your task is to **ret
    - If **no relevant article** is found, respond clearly:
      > "No precise legal information found. Please provide more details about your situation."
 
-## 🔹 **Output Format**:
-- **Raw text of the article(s)** if found.
-- If no relevant articles are found: a polite sentence asking for more context or clarification.
-
+ 
  
 
 
@@ -97,7 +140,7 @@ def get_llm():
     llm = ChatBedrock(
         model_id="anthropic.claude-3-5-sonnet-20240620-v1:0",   
         client=bedrock_client,
-        temperature=0.5)
+        temperature=0.3)
     return llm
 
 def load_all_indices():
@@ -119,13 +162,13 @@ def load_all_indices():
             )
 
 def create_conversation_chain(retriever):
-    prompt_template = """
-## 🔹 **Role**:
+    prompt_template = ChatPromptTemplate.from_messages([
+        (""" ## 🔹 **Role**:
 You are a **Tunisian lawyer**. Your task is to provide **clear, precise, and professional answers** based solely on the retrieved legal articles. You must help the user understand their legal situation, providing relevant explanations, clarifications, and examples when necessary.
 
 ## 🔹 **Guidelines**:
 1. **Answer directly to the user's question**:
-   - Avoid starting with phrases like "According to the context provided".
+   - don't starting with phrases like "According to the context provided".
    - Provide a **concise, direct answer** for straightforward or factual questions (e.g., referencing a specific article of law).
    - For broader or more complex questions (e.g., interpretations of legal principles or explanations), offer a **detailed, well-structured response** with examples, legal references, or relevant case law where applicable.
    
@@ -156,49 +199,79 @@ You are a **Tunisian lawyer**. Your task is to provide **clear, precise, and pro
 ## 🔹 **Output Format**:
 - **Formal, direct answers** with legal precision.
 - Where necessary, **ask for clarification** if the question is ambiguous or requires more information.
-- Remind the user to **consult a lawyer** for sensitive matters or when personal advice is needed.
+- Remind the user to **consult a lawyer** for sensitive matters or when personal advice is needed.""" ),
 
 
+ MessagesPlaceholder(variable_name="chat_history"),  # Placeholder pour l'historique de conversation
+        ("human", "{question}"),
+   ])
     
+      # Initialiser la mémoire de conversation
+    memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
-
-Context: {context}  
-Question: {question}  
-
-Answer:
-
-    """
-
-    prompt = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
-    llm = get_llm()
-
-    def format_context(inputs):
-        docs = retriever.invoke(inputs["question"])
-        return {
-            **inputs,
-            "context": "\n\n".join([doc.page_content for doc in docs])
-        }
-
+    # Créer la chaîne de conversation
     chain = (
-        RunnablePassthrough() 
-        | format_context
-        | prompt
-        | llm
+        RunnablePassthrough.assign(
+            chat_history=lambda x: memory.load_memory_variables({})["chat_history"]
+        )
+        | prompt_template
+        | get_llm()
         | StrOutputParser()
     )
+
+    return chain, memory
+
+# Interface d'inscription
+def register():
+    st.title("Register")
+    username = st.text_input("Choose a username")
+    password = st.text_input("Choose a password", type="password")
+    if st.button("Register"):
+        if username and password:
+            add_user(username, password)
+        else:
+            st.error("Please fill in all fields.")
+
+# Interface de connexion
+def login():
+    st.title("Login")
+    username = st.text_input("Username")
+    password = st.text_input("Password", type="password")
+    if st.button("Login"):
+        if authenticate(username, password):
+            st.session_state["username"] = username
+            st.session_state["logged_in"] = True
+            # Charger automatiquement le thread par défaut
+            threads = get_threads(username)
+            if threads:
+                st.session_state["current_thread"] = threads[0][0]  # Charger le premier thread
+                st.session_state["chat_history"] = []
+            st.success("Logged in successfully!")
+            st.rerun()
+        else:
+            st.error("Invalid username or password")
+
     
-    return chain
 
 def main():
-    st.header("This is client side PDF Chat bot")
+     
+    st.header("Tunisian Legal Assistant with Memory")
 
     # Initialiser l'état de la session
+    if "username" not in st.session_state:
+        st.session_state["username"] = None
+    if "logged_in" not in st.session_state:
+        st.session_state["logged_in"] = False
+    if "current_thread" not in st.session_state:
+        st.session_state["current_thread"] = None
     if "chat_history" not in st.session_state:
-        st.session_state.chat_history = []
+        st.session_state["chat_history"] = []
     if "retriever" not in st.session_state:
-        st.session_state.retriever = None
+        st.session_state["retriever"] = None
     if "conversation" not in st.session_state:
-        st.session_state.conversation = None
+        st.session_state["conversation"] = None
+    if "memory" not in st.session_state:
+        st.session_state["memory"] = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
     load_all_indices()
 
@@ -236,7 +309,7 @@ def main():
     # Créer le retriever et la chaîne de conversation
     if st.session_state.retriever is None:
         st.session_state.retriever = combined_index.as_retriever(search_kwargs={"k": 3})
-        st.session_state.conversation = create_conversation_chain(st.session_state.retriever)
+        st.session_state.conversation, st.session_state.memory = create_conversation_chain(st.session_state.retriever)
 
     # Main chat interface
     if st.session_state.conversation is None:
@@ -248,29 +321,42 @@ def main():
         with st.chat_message("Human" if isinstance(message, HumanMessage) else "AI"):
             st.markdown(message.content)
 
-    # Chat input
+   # Chat input
     query = st.chat_input("Ask a question about your documents")
-    if query:
+    if query and st.session_state.logged_in and st.session_state.current_thread:
+        # Ajouter le message de l'utilisateur à l'historique
         st.session_state.chat_history.append(HumanMessage(content=query))
-        
-        # Display user message
+
+        # Afficher le message de l'utilisateur
         with st.chat_message("Human"):
             st.markdown(query)
 
          # Detect language
-        language = detect_language(query)
-        language_name = {"ar": "Arabic", "fr": "French", "en": "English"}.get(language, "French")
+        language = detect(query)
+        language_name = {"ar": "Arabic", "fr": "French", "en": "English"}.get(language, "English")
          
 
-        # Generate AI response
+         # Générer la réponse de l'IA
         with st.chat_message("AI"):
             response = ""
             response_container = st.empty()
-            for chunk in st.session_state.conversation.stream({"question": query, "language": language_name}):
+            for chunk in st.session_state.conversation.stream({"question": query, "chat_history": st.session_state.chat_history, "language": language_name}):
                 response += chunk
                 response_container.markdown(response)
             st.session_state.chat_history.append(AIMessage(content=response))
 
+        # Sauvegarder le contexte dans la mémoire
+        st.session_state.memory.save_context({"question": query}, {"output": response})
 
-if __name__ == "__main__":
+# Initialiser la base de données
+init_db()
+
+# Interface de connexion ou inscription
+if "logged_in" not in st.session_state or not st.session_state.logged_in:
+    choice = st.sidebar.selectbox("Choose an option", ["Login", "Register"])
+    if choice == "Login":
+        login()
+    elif choice == "Register":
+        register()
+else:
     main()
