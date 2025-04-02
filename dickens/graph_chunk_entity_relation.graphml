@@ -1,0 +1,2476 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d9" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d8" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d7" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d6" for="edge" attr.name="description" attr.type="string"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Code de la Nationalite Tunisienne">
+  <data key="d0">Code de la Nationalite Tunisienne</data>
+  <data key="d1">organization</data>
+  <data key="d2">The Code de la Nationalite Tunisienne is a legal document that determines the conditions for acquiring and losing Tunisian nationality.</data>
+  <data key="d3">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Tunisian Nationality">
+  <data key="d0">Tunisian Nationality</data>
+  <data key="d1">category</data>
+  <data key="d2">Tunisian nationality is a legal status that can be acquired or lost after birth, according to the law and decisions made by the authorities.&lt;SEP&gt;Tunisian nationality refers to the legal status of being a citizen of Tunisia.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43&lt;SEP&gt;chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 1">
+  <data key="d0">Article 1</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 1 of the Code de la Nationalite Tunisienne defines individuals who have Tunisian nationality at birth as their nationality of origin.</data>
+  <data key="d3">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 2">
+  <data key="d0">Article 2</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 2 of the Code de la Nationalite Tunisienne states that the conditions for acquiring and losing Tunisian nationality after birth are governed by the current law at the time of the relevant events and acts.</data>
+  <data key="d3">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 3">
+  <data key="d0">Article 3</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 3 of the Code de la Nationalite Tunisienne states that new laws regarding the attribution of Tunisian nationality as nationality of origin apply to individuals born before the effective date of the laws, as long as they have not yet reached the age of majority.</data>
+  <data key="d3">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 4">
+  <data key="d0">Article 4</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 4 of the Code de la Nationalite Tunisienne defines a person as an adult when they have reached the age of 18.</data>
+  <data key="d3">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 5">
+  <data key="d0">Article 5</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 5 of the Code de la Nationalite Tunisienne defines the term 'in Tunisia' to include the entire Tunisian territory, territorial waters, and Tunisian boats, ships, and aircraft.</data>
+  <data key="d3">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 6">
+  <data key="d0">Article 6</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 6 of the Code de la Nationalite Tunisienne, which has been replaced by the first article of the law n° 2010-55 of December 1, 2010, states that a child is Tunisian if their father or mother is Tunisian.</data>
+  <data key="d3">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 7">
+  <data key="d0">Article 7</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 7 of the Code de la Nationalite Tunisienne states that a child born in Tunisia, whose father and grandfather were also born in Tunisia, is considered Tunisian.</data>
+  <data key="d3">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 8">
+  <data key="d0">Article 8</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 8 of the Code de la Nationalite Tunisienne states that a child born in Tunisia to stateless parents who have resided in Tunisia for at least five years is considered Tunisian.</data>
+  <data key="d3">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 9">
+  <data key="d0">Article 9</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 9 of the Code de la Nationalite Tunisienne states that a child born in Tunisia to unknown parents is considered Tunisian.</data>
+  <data key="d3">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 10">
+  <data key="d0">Article 10</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 10 is a section of the document that pertains to the opposition process for violations of data protection norms in the registry.&lt;SEP&gt;Article 10 of the Code de la Nationalite Tunisienne states that a newborn child found in Tunisia is presumed to have been born in Tunisia until proven otherwise.</data>
+  <data key="d3">chunk-e71f13222c8c4bfa0c570eefbe82a3fa&lt;SEP&gt;chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 11">
+  <data key="d0">Article 11</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 11 is a section of the document that outlines the specific data that is recorded and stored in the registry for each individual.&lt;SEP&gt;Article 11 of the Code de la Nationalite Tunisienne states that a child who is Tunisian under the provisions of this chapter is considered to have been Tunisian from birth, even if the conditions for Tunisian nationality are established after birth.</data>
+  <data key="d3">chunk-e71f13222c8c4bfa0c570eefbe82a3fa&lt;SEP&gt;chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Tunisia">
+  <data key="d0">Tunisia</data>
+  <data key="d1">geo</data>
+  <data key="d2">Tunisia is a country located in North Africa.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Code of Tunisian Nationality">
+  <data key="d0">Code of Tunisian Nationality</data>
+  <data key="d1">category</data>
+  <data key="d2">The Code of Tunisian Nationality is the legal framework that governs the acquisition and loss of Tunisian nationality.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="World Athletics Championship">
+  <data key="d0">World Athletics Championship</data>
+  <data key="d1">event</data>
+  <data key="d2">The World Athletics Championship is a global sports competition featuring top athletes in track and field.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e&lt;SEP&gt;chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Tokyo">
+  <data key="d0">Tokyo</data>
+  <data key="d1">location</data>
+  <data key="d2">Tokyo is the host city of the World Athletics Championship.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Noah Carter">
+  <data key="d0">Noah Carter</data>
+  <data key="d1">person</data>
+  <data key="d2">Noah Carter is a sprinter who set a new record in the 100m sprint at the World Athletics Championship.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e&lt;SEP&gt;chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="100m Sprint Record">
+  <data key="d0">100m Sprint Record</data>
+  <data key="d1">record</data>
+  <data key="d2">The 100m sprint record is a benchmark in athletics, recently broken by Noah Carter.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Carbon-Fiber Spikes">
+  <data key="d0">Carbon-Fiber Spikes</data>
+  <data key="d1">equipment</data>
+  <data key="d2">Carbon-fiber spikes are advanced sprinting shoes that provide enhanced speed and traction.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="World Athletics Federation">
+  <data key="d0">World Athletics Federation</data>
+  <data key="d1">organization</data>
+  <data key="d2">The World Athletics Federation is the governing body overseeing the World Athletics Championship and record validations.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="postérieurement">
+  <data key="d0">postérieurement</data>
+  <data key="d1">category</data>
+  <data key="d2">Postérieurement refers to something that occurs or exists after a certain event or time.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="nationalité tunisienne">
+  <data key="d0">nationalité tunisienne</data>
+  <data key="d1">category</data>
+  <data key="d2">La nationalité tunisienne fait référence au statut légal d'être citoyen tunisien.&lt;SEP&gt;The nationalité tunisienne refers to Tunisian citizenship and the rights and responsibilities associated with it.&lt;SEP&gt;The term 'nationalité tunisienne' refers to Tunisian nationality or citizenship.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e&lt;SEP&gt;chunk-40d19ee233ee3c2bd972c0811c0e0167&lt;SEP&gt;chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="loi">
+  <data key="d0">loi</data>
+  <data key="d1">category</data>
+  <data key="d2">La loi est un ensemble de règles et de réglementations qui régissent la société et les individus.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="loi n° 2010-55 du 1er décembre 2010">
+  <data key="d0">loi n° 2010-55 du 1er décembre 2010</data>
+  <data key="d1">category</data>
+  <data key="d2">La loi n° 2010-55 du 1er décembre 2010 est une loi spécifique qui a abrogé l'article 12 du Code de la Nationalité Tunisienne.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="femme étrangère">
+  <data key="d0">femme étrangère</data>
+  <data key="d1">person</data>
+  <data key="d2">Une femme étrangère est une personne de nationalité étrangère.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="tunisien">
+  <data key="d0">tunisien</data>
+  <data key="d1">person</data>
+  <data key="d2">Un Tunisien est une personne de nationalité tunisienne.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="mariage">
+  <data key="d0">mariage</data>
+  <data key="d1">event</data>
+  <data key="d2">Le mariage est une cérémonie ou un contrat légal qui unit deux personnes en tant que partenaires dans une relation conjugale.&lt;SEP&gt;The term 'mariage' is mentioned in the text, but no specific description is provided.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305&lt;SEP&gt;chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="loi nationale">
+  <data key="d0">loi nationale</data>
+  <data key="d1">category</data>
+  <data key="d2">La loi nationale fait référence aux lois et réglementations d'un pays spécifique.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="déclaration">
+  <data key="d0">déclaration</data>
+  <data key="d1">category</data>
+  <data key="d2">La déclaration refers to a formal statement or document made by an individual, often used to assert or renounce a particular right or status.&lt;SEP&gt;Une déclaration est une affirmation formelle ou une expression d'une opinion ou d'une intention.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167&lt;SEP&gt;chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Code">
+  <data key="d0">Code</data>
+  <data key="d1">category</data>
+  <data key="d2">Le Code fait référence à un ensemble de lois ou de règles régissant un domaine spécifique.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="décret">
+  <data key="d0">décret</data>
+  <data key="d1">category</data>
+  <data key="d2">Le décret is a legal instrument or order issued by the government or a higher authority, often used to implement laws or regulations.&lt;SEP&gt;The term 'décret' is mentioned in the text, but no specific description is provided.&lt;SEP&gt;Un décret est une décision ou une ordonnance émise par une autorité gouvernementale.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305&lt;SEP&gt;chunk-40d19ee233ee3c2bd972c0811c0e0167&lt;SEP&gt;chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Président de la République">
+  <data key="d0">Président de la République</data>
+  <data key="d1">person</data>
+  <data key="d2">Le Président de la République est le chef de l'État dans un système présidentiel.&lt;SEP&gt;The Président de la République is the head of state in Tunisia and has the authority to make decisions regarding naturalization.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167&lt;SEP&gt;chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="décision judiciaire">
+  <data key="d0">décision judiciaire</data>
+  <data key="d1">category</data>
+  <data key="d2">Une décision judiciaire est une décision rendue par un tribunal ou une autorité judiciaire.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="nullité du mariage">
+  <data key="d0">nullité du mariage</data>
+  <data key="d1">category</data>
+  <data key="d2">La nullité du mariage fait référence à l'annulation ou à l'invalidation légale d'un mariage.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="déclaration d'opposition">
+  <data key="d0">déclaration d'opposition</data>
+  <data key="d1">category</data>
+  <data key="d2">Une déclaration d'opposition est une déclaration formelle exprimant un désaccord ou une objection.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="validité">
+  <data key="d0">validité</data>
+  <data key="d1">category</data>
+  <data key="d2">La validité fait référence à l'état ou à la qualité d'être valide ou légalement reconnu.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="adoption">
+  <data key="d0">adoption</data>
+  <data key="d1">event</data>
+  <data key="d2">L'adoption est le processus légal par lequel une personne devient le parent légal d'un enfant qui n'est pas biologiquement le sien.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="jugement d'adoption">
+  <data key="d0">jugement d'adoption</data>
+  <data key="d1">category</data>
+  <data key="d2">Le jugement d'adoption est une décision rendue par un tribunal confirmant l'adoption légale d'un enfant.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="résidence">
+  <data key="d0">résidence</data>
+  <data key="d1">category</data>
+  <data key="d2">La résidence fait référence à l'endroit où une personne habite ou réside habituellement.&lt;SEP&gt;The term 'résidence' is mentioned in the text, but no specific description is provided.&lt;SEP&gt;The term 'résidence' refers to a person's place of residence or domicile.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e&lt;SEP&gt;chunk-39ef83b2ef6f3575d4de965cb81ee305&lt;SEP&gt;chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="naturalisation tunisienne">
+  <data key="d0">naturalisation tunisienne</data>
+  <data key="d1">category</data>
+  <data key="d2">La naturalisation tunisienne fait référence au processus par lequel un étranger devient citoyen tunisien.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="services exceptionnels">
+  <data key="d0">services exceptionnels</data>
+  <data key="d1">category</data>
+  <data key="d2">Les services exceptionnels font référence à des actions ou des contributions remarquables ou extraordinaires.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="intérêt exceptionnel">
+  <data key="d0">intérêt exceptionnel</data>
+  <data key="d1">category</data>
+  <data key="d2">L'intérêt exceptionnel fait référence à un intérêt particulièrement important ou significatif.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="secretaire d'État à la justice">
+  <data key="d0">secretaire d'État à la justice</data>
+  <data key="d1">person</data>
+  <data key="d2">Le secrétaire d'État à la justice est un haut fonctionnaire chargé des affaires juridiques dans un gouvernement.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="arrêté d'expulsion">
+  <data key="d0">arrêté d'expulsion</data>
+  <data key="d1">category</data>
+  <data key="d2">Un arrêté d'expulsion est une décision administrative ordonnant à un étranger de quitter un pays.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="arrêté d'assignation à résidence">
+  <data key="d0">arrêté d'assignation à résidence</data>
+  <data key="d1">category</data>
+  <data key="d2">Un arrêté d'assignation à résidence est une décision administrative obligeant un étranger à résider dans un lieu spécifique.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="connaissance suffisante">
+  <data key="d0">connaissance suffisante</data>
+  <data key="d1">category</data>
+  <data key="d2">La connaissance suffisante fait référence à un niveau adéquat de compréhension ou de maîtrise d'un sujet ou d'une compétence.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="langue arabe">
+  <data key="d0">langue arabe</data>
+  <data key="d1">category</data>
+  <data key="d2">La langue arabe est une langue sémitique parlée dans de nombreux pays du Moyen-Orient et de l'Afrique du Nord.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="sain d'esprit">
+  <data key="d0">sain d'esprit</data>
+  <data key="d1">category</data>
+  <data key="d2">Être sain d'esprit fait référence à l'état de santé mentale d'une personne, caractérisé par une pensée rationnelle et une absence de troubles mentaux.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="état de santé physique">
+  <data key="d0">état de santé physique</data>
+  <data key="d1">category</data>
+  <data key="d2">L'état de santé physique fait référence à la condition physique et à la santé globale d'une personne.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="bonnes vie et moeurs">
+  <data key="d0">bonnes vie et moeurs</data>
+  <data key="d1">category</data>
+  <data key="d2">Les bonnes vie et moeurs font référence à un comportement moral et social acceptable selon les normes de la société.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="condamnation">
+  <data key="d0">condamnation</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'condamnation' is mentioned in the text, but no specific description is provided.&lt;SEP&gt;Une condamnation est une déclaration de culpabilité prononcée par un tribunal à l'encontre d'une personne accusée d'une infraction.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305&lt;SEP&gt;chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="réhabilitation">
+  <data key="d0">réhabilitation</data>
+  <data key="d1">category</data>
+  <data key="d2">La réhabilitation est le processus légal par lequel une personne condamnée récupère ses droits civils et sociaux après avoir purgé sa peine.</data>
+  <data key="d3">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Ministre">
+  <data key="d0">Ministre</data>
+  <data key="d1">person</data>
+  <data key="d2">Le Ministre est mentionné dans le texte, mais aucune description spécifique n'est donnée.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Ministère">
+  <data key="d0">Ministère</data>
+  <data key="d1">organization</data>
+  <data key="d2">Le Ministère est mentionné dans le texte, mais aucune description spécifique n'est donnée.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Tunisie">
+  <data key="d0">Tunisie</data>
+  <data key="d1">geo</data>
+  <data key="d2">La Tunisie est mentionnée dans le texte, mais aucune description spécifique n'est donnée.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="collectivité">
+  <data key="d0">collectivité</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'collectivité' is mentioned in the text, but no specific description is provided.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="vie et moeurs">
+  <data key="d0">vie et moeurs</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'vie et moeurs' is mentioned in the text, but no specific description is provided.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="droit commun">
+  <data key="d0">droit commun</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'droit commun' is mentioned in the text, but no specific description is provided.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="effets de l’acquisition de la nationalité tunisienne">
+  <data key="d0">effets de l’acquisition de la nationalité tunisienne</data>
+  <data key="d1">category</data>
+  <data key="d2">The section 'effets de l’acquisition de la nationalité tunisienne' is mentioned in the text, but no specific description is provided.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="incapacités spéciales aux naturalisés">
+  <data key="d0">incapacités spéciales aux naturalisés</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'incapacités spéciales aux naturalisés' is mentioned in the text, but no specific description is provided.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="enfant mineur non marié">
+  <data key="d0">enfant mineur non marié</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'enfant mineur non marié' is mentioned in the text, but no specific description is provided.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="décret de naturalisation">
+  <data key="d0">décret de naturalisation</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'décret de naturalisation' is mentioned in the text, but no specific description is provided.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="incapacités">
+  <data key="d0">incapacités</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'incapacités' is mentioned in the text, but no specific description is provided.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="fonctions ou de mandats électifs">
+  <data key="d0">fonctions ou de mandats électifs</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'fonctions ou de mandats électifs' is mentioned in the text, but no specific description is provided.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="emploi vacant des cadres tunisiens">
+  <data key="d0">emploi vacant des cadres tunisiens</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'emploi vacant des cadres tunisiens' is mentioned in the text, but no specific description is provided.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="perte, de la déchéance et du retrait de la nationalité tunisienne">
+  <data key="d0">perte, de la déchéance et du retrait de la nationalité tunisienne</data>
+  <data key="d1">category</data>
+  <data key="d2">The section 'perte, de la déchéance et du retrait de la nationalité tunisienne' is mentioned in the text, but no specific description is provided.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Perte de la nationalité tunisienne">
+  <data key="d0">Perte de la nationalité tunisienne</data>
+  <data key="d1">category</data>
+  <data key="d2">The section 'Perte de la nationalité tunisienne' is mentioned in the text, but no specific description is provided.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="acquisition volontaire d’une nationalité étrangère">
+  <data key="d0">acquisition volontaire d’une nationalité étrangère</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'acquisition volontaire d’une nationalité étrangère' is mentioned in the text, but no specific description is provided.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="allégeance">
+  <data key="d0">allégeance</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'allégeance' is mentioned in the text, but no specific description is provided.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="déchéance de la nationalité tunisienne">
+  <data key="d0">déchéance de la nationalité tunisienne</data>
+  <data key="d1">category</data>
+  <data key="d2">The section 'déchéance de la nationalité tunisienne' is mentioned in the text, but no specific description is provided.</data>
+  <data key="d3">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="loi sur le recrutement de l’armée">
+  <data key="d0">loi sur le recrutement de l’armée</data>
+  <data key="d1">category</data>
+  <data key="d2">The loi sur le recrutement de l’armée is a law that imposes obligations on individuals regarding military recruitment.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="déchéance">
+  <data key="d0">déchéance</data>
+  <data key="d1">category</data>
+  <data key="d2">La déchéance is a legal term referring to the loss or deprivation of a right or status, such as the loss of Tunisian citizenship.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="délai">
+  <data key="d0">délai</data>
+  <data key="d1">category</data>
+  <data key="d2">Le délai refers to a specific period of time or deadline, such as the time frame within which certain actions or events must occur.&lt;SEP&gt;The term 'délai' refers to a period of time or deadline for taking action.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e&lt;SEP&gt;chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="naturalisation">
+  <data key="d0">naturalisation</data>
+  <data key="d1">category</data>
+  <data key="d2">La naturalisation is the process of acquiring citizenship of a country by an individual who is not a citizen of that country by birth.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="secretaire d’Etat à la justice">
+  <data key="d0">secretaire d’Etat à la justice</data>
+  <data key="d1">organization</data>
+  <data key="d2">Le secretaire d’Etat à la justice is a government official responsible for overseeing legal matters and the administration of justice.&lt;SEP&gt;Le secrétaire d’Etat à la justice is a government official responsible for overseeing legal matters and the administration of justice.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="condamné">
+  <data key="d0">condamné</data>
+  <data key="d1">category</data>
+  <data key="d2">condamné is a French term meaning 'convicted' or 'sentenced'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 34">
+  <data key="d0">Article 34</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 34 is a specific article within the law that outlines the conditions under which déchéance is incurred.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 33">
+  <data key="d0">Article 33</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 33 is a specific article within the law that defines the acts that can lead to déchéance.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="dix ans">
+  <data key="d0">dix ans</data>
+  <data key="d1">category</data>
+  <data key="d2">dix ans is a French term meaning 'ten years'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="acquisition de la nationalité tunisienne">
+  <data key="d0">acquisition de la nationalité tunisienne</data>
+  <data key="d1">category</data>
+  <data key="d2">The acquisition de la nationalité tunisienne refers to the process of obtaining Tunisian citizenship.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 35">
+  <data key="d0">Article 35</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 35 is a specific article within the law that allows for the extension of déchéance to the spouse and minor unmarried children of the individual.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="femme">
+  <data key="d0">femme</data>
+  <data key="d1">category</data>
+  <data key="d2">femme is a French term meaning 'woman'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="enfants mineurs non mariés">
+  <data key="d0">enfants mineurs non mariés</data>
+  <data key="d1">category</data>
+  <data key="d2">enfants mineurs non mariés is a French term meaning 'minor unmarried children'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="nationalité étrangère">
+  <data key="d0">nationalité étrangère</data>
+  <data key="d1">category</data>
+  <data key="d2">nationalité étrangère is a French term meaning 'foreign nationality'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Section III">
+  <data key="d0">Section III</data>
+  <data key="d1">category</data>
+  <data key="d2">Section III is a specific section within the law that deals with the withdrawal of Tunisian nationality.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Retrait de la nationalité tunisienne">
+  <data key="d0">Retrait de la nationalité tunisienne</data>
+  <data key="d1">category</data>
+  <data key="d2">Le retrait de la nationalité tunisienne refers to the process of revoking or withdrawing Tunisian citizenship.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 36">
+  <data key="d0">Article 36</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 36 is a specific article within the law that allows for the withdrawal of naturalization if the individual did not meet the required conditions.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 37">
+  <data key="d0">Article 37</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 37 is a specific article within the law that allows for the revocation of naturalization if the individual made false declarations or engaged in fraudulent activities.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="fausse déclaration">
+  <data key="d0">fausse déclaration</data>
+  <data key="d1">category</data>
+  <data key="d2">fausse déclaration is a French term meaning 'false declaration'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="manoeuvres frauduleuses">
+  <data key="d0">manoeuvres frauduleuses</data>
+  <data key="d1">category</data>
+  <data key="d2">manoeuvres frauduleuses is a French term meaning 'fraudulent maneuvers'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="pièce contenant une assertion mensongère ou erronée">
+  <data key="d0">pièce contenant une assertion mensongère ou erronée</data>
+  <data key="d1">category</data>
+  <data key="d2">pièce contenant une assertion mensongère ou erronée is a French term meaning 'document containing a false or erroneous statement'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="découverte de la fraude">
+  <data key="d0">découverte de la fraude</data>
+  <data key="d1">category</data>
+  <data key="d2">découverte de la fraude is a French term meaning 'discovery of fraud'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 38">
+  <data key="d0">Article 38</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 38 is a specific article within the law that addresses the validity of acts performed prior to the withdrawal of naturalization.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="actes">
+  <data key="d0">actes</data>
+  <data key="d1">category</data>
+  <data key="d2">actes is a French term meaning 'acts' or 'actions'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="décret de retrait">
+  <data key="d0">décret de retrait</data>
+  <data key="d1">category</data>
+  <data key="d2">Le décret de retrait refers to the decree or order issued for the withdrawal of naturalization.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="qualité de tunisien">
+  <data key="d0">qualité de tunisien</data>
+  <data key="d1">category</data>
+  <data key="d2">qualité de tunisien is a French term meaning 'Tunisian nationality' or 'Tunisian citizenship'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="TITRE II">
+  <data key="d0">TITRE II</data>
+  <data key="d1">category</data>
+  <data key="d2">TITRE II is a specific title within the law that deals with administrative procedures.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="PROCÉDURE ADMINISTRATIVE">
+  <data key="d0">PROCÉDURE ADMINISTRATIVE</data>
+  <data key="d1">category</data>
+  <data key="d2">PROCÉDURE ADMINISTRATIVE is a French term meaning 'administrative procedure'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Chapitre premier">
+  <data key="d0">Chapitre premier</data>
+  <data key="d1">category</data>
+  <data key="d2">Chapitre premier is a specific chapter within the law that focuses on declarations of nationality.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="déclarations de la nationalité">
+  <data key="d0">déclarations de la nationalité</data>
+  <data key="d1">category</data>
+  <data key="d2">déclarations de la nationalité is a French term meaning 'declarations of nationality'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="papier timbré">
+  <data key="d0">papier timbré</data>
+  <data key="d1">category</data>
+  <data key="d2">papier timbré is a French term meaning 'stamped paper'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="double exemplaire">
+  <data key="d0">double exemplaire</data>
+  <data key="d1">category</data>
+  <data key="d2">double exemplaire is a French term meaning 'duplicate' or 'copy'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="élection de domicile">
+  <data key="d0">élection de domicile</data>
+  <data key="d1">category</data>
+  <data key="d2">élection de domicile is a French term meaning 'choice of residence' or 'declaration of residence'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="signature légalisée">
+  <data key="d0">signature légalisée</data>
+  <data key="d1">category</data>
+  <data key="d2">signature légalisée is a French term meaning 'notarized signature'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="officier public">
+  <data key="d0">officier public</data>
+  <data key="d1">category</data>
+  <data key="d2">officier public is a French term meaning 'public officer' or 'official'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="pièces justificatives">
+  <data key="d0">pièces justificatives</data>
+  <data key="d1">category</data>
+  <data key="d2">pièces justificatives is a French term meaning 'supporting documents' or 'proofs'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="état civil">
+  <data key="d0">état civil</data>
+  <data key="d1">category</data>
+  <data key="d2">état civil is a French term meaning 'civil status' or 'vital records'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Chapitre II">
+  <data key="d0">Chapitre II</data>
+  <data key="d1">category</data>
+  <data key="d2">Chapitre II is a specific chapter within the law that focuses on decisions related to naturalization.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="décisions relatives aux naturalisations">
+  <data key="d0">décisions relatives aux naturalisations</data>
+  <data key="d1">category</data>
+  <data key="d2">décisions relatives aux naturalisations is a French term meaning 'decisions regarding naturalizations'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="enquête">
+  <data key="d0">enquête</data>
+  <data key="d1">category</data>
+  <data key="d2">enquête is a French term meaning 'investigation' or 'inquiry'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="ajournement de la demande">
+  <data key="d0">ajournement de la demande</data>
+  <data key="d1">category</data>
+  <data key="d2">ajournement de la demande is a French term meaning 'postponement of the request' or 'deferment of the application'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="demande">
+  <data key="d0">demande</data>
+  <data key="d1">category</data>
+  <data key="d2">demande is a French term meaning 'request' or 'application'.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="(*)">
+  <data key="d0">(*)</data>
+  <data key="d1">category</data>
+  <data key="d2">(*) is a symbol used to indicate a footnote or additional information.</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Journal Officiel de la République Tunisienne">
+  <data key="d0">Journal Officiel de la République Tunisienne</data>
+  <data key="d1">organization</data>
+  <data key="d2">Le Journal Officiel de la République Tunisienne est le journal dans lequel le présent décret gouvernemental sera publié.&lt;SEP&gt;The Journal Officiel de la République Tunisienne is a publication where legal measures and decisions are announced.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e&lt;SEP&gt;chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Tunis">
+  <data key="d0">Tunis</data>
+  <data key="d1">geo</data>
+  <data key="d2">Tunis est la ville où le présent décret gouvernemental a été signé.&lt;SEP&gt;Tunis is the capital city of Tunisia and the location of the World Athletics Championship.&lt;SEP&gt;Tunis is the city where the present governmental decree was signed.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e&lt;SEP&gt;chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Ministre ou Ministère">
+  <data key="d0">Ministre ou Ministère</data>
+  <data key="d1">organization</data>
+  <data key="d2">The Ministre ou Ministère refers to the Minister or Ministry, depending on the context.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Tribunal de première instance">
+  <data key="d0">Tribunal de première instance</data>
+  <data key="d1">organization</data>
+  <data key="d2">The Tribunal de première instance is a court with jurisdiction over civil matters, including nationality disputes.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Cour d'appel">
+  <data key="d0">Cour d'appel</data>
+  <data key="d1">organization</data>
+  <data key="d2">The Cour d'appel is an appellate court with jurisdiction over civil matters, including nationality disputes.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="secretaire d'Etat à la justice">
+  <data key="d0">secretaire d'Etat à la justice</data>
+  <data key="d1">person</data>
+  <data key="d2">The secretaire d'Etat à la justice is a government official responsible for the administration of justice in Tunisia.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="pièces et mémoires">
+  <data key="d0">pièces et mémoires</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'pièces et mémoires' refers to documents and written submissions that can be submitted to the secretaire d'Etat à la justice.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="décrets de naturalisation">
+  <data key="d0">décrets de naturalisation</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'décrets de naturalisation' refers to decrees related to the process of granting citizenship to individuals.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="décrets portant perte, déchéance, retrait de la nationalité tunisienne ou opposition du gouvernement à l’acquisition de cette nationalité">
+  <data key="d0">décrets portant perte, déchéance, retrait de la nationalité tunisienne ou opposition du gouvernement à l’acquisition de cette nationalité</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'décrets portant perte, déchéance, retrait de la nationalité tunisienne ou opposition du gouvernement à l’acquisition de cette nationalité' refers to decrees related to the loss, deprivation, withdrawal of Tunisian nationality, or government opposition to the acquisition of this nationality.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="tribunal de première instance">
+  <data key="d0">tribunal de première instance</data>
+  <data key="d1">organization</data>
+  <data key="d2">The tribunal de première instance is a court of first instance with jurisdiction over civil matters, including nationality disputes.&lt;SEP&gt;The tribunal de première instance is an organization where individuals can appeal the refusal to issue a certificate of Tunisian nationality.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e&lt;SEP&gt;chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="exception de nationalité">
+  <data key="d0">exception de nationalité</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'exception de nationalité' refers to an exception or objection regarding Tunisian nationality.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="exception d'extranéité">
+  <data key="d0">exception d'extranéité</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'exception d'extranéité' refers to an exception or objection regarding foreign nationality or non-Tunisian status.&lt;SEP&gt;The term 'exception d'extranéité' refers to an objection or challenge to foreign nationality or non-Tunisian status.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="tribunal du lieu de la résidence">
+  <data key="d0">tribunal du lieu de la résidence</data>
+  <data key="d1">organization</data>
+  <data key="d2">The tribunal du lieu de la résidence is a court with jurisdiction over nationality disputes based on the residence of the person involved.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="tribunal du lieu de la résidence du demandeur">
+  <data key="d0">tribunal du lieu de la résidence du demandeur</data>
+  <data key="d1">organization</data>
+  <data key="d2">The tribunal du lieu de la résidence du demandeur is a court with jurisdiction over nationality disputes based on the residence of the person filing the claim.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="exception de nationalité tunisienne">
+  <data key="d0">exception de nationalité tunisienne</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'exception de nationalité tunisienne' refers to an objection or challenge to Tunisian nationality.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="juridiction répressive">
+  <data key="d0">juridiction répressive</data>
+  <data key="d1">organization</data>
+  <data key="d2">The term 'juridiction répressive' refers to a criminal court or jurisdiction.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="certificat de nationalité">
+  <data key="d0">certificat de nationalité</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'certificat de nationalité' refers to a certificate of nationality issued in accordance with the relevant laws and regulations.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="question préjudicielle">
+  <data key="d0">question préjudicielle</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'question préjudicielle' refers to a preliminary question or issue that must be resolved before a court can make a decision on the main matter.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="procureur de la République">
+  <data key="d0">procureur de la République</data>
+  <data key="d1">person</data>
+  <data key="d2">The procureur de la République is a public prosecutor who represents the state in legal proceedings and has the authority to initiate actions related to nationality disputes.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="administration publique">
+  <data key="d0">administration publique</data>
+  <data key="d1">organization</data>
+  <data key="d2">The term 'administration publique' refers to a public administration or government agency.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="tierce personne">
+  <data key="d0">tierce personne</data>
+  <data key="d1">person</data>
+  <data key="d2">The term 'tierce personne' refers to a third party or individual who is not directly involved in a legal dispute but has raised the issue of nationality before a court.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="partie principale">
+  <data key="d0">partie principale</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'partie principale' refers to the main party or the state as the primary participant in a legal proceeding involving nationality.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="parties privées">
+  <data key="d0">parties privées</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'parties privées' refers to private parties or individuals involved in a legal proceeding related to nationality.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="copie de la requête">
+  <data key="d0">copie de la requête</data>
+  <data key="d1">category</data>
+  <data key="d2">The term 'copie de la requête' refers to a copy of the claim or petition filed with the court in a nationality dispute.</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="ministère public">
+  <data key="d0">ministère public</data>
+  <data key="d1">organization</data>
+  <data key="d2">The ministère public is an organization involved in civil matters and is required to be involved and present reasoned conclusions in all instances.</data>
+  <data key="d3">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="secrétariat d’État à la justice">
+  <data key="d0">secrétariat d’État à la justice</data>
+  <data key="d1">organization</data>
+  <data key="d2">The secrétariat d’État à la justice is an organization where copies of requests related to nationality disputes are deposited.</data>
+  <data key="d3">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Code des Obligations et des Contrats">
+  <data key="d0">Code des Obligations et des Contrats</data>
+  <data key="d1">category</data>
+  <data key="d2">The Code des Obligations et des Contrats is a legal framework that governs the authority of decisions made in nationality disputes.</data>
+  <data key="d3">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="tribunaux de première instance">
+  <data key="d0">tribunaux de première instance</data>
+  <data key="d1">organization</data>
+  <data key="d2">The tribunaux de première instance are organizations that make decisions regarding nationality disputes.</data>
+  <data key="d3">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="cours d’appel">
+  <data key="d0">cours d’appel</data>
+  <data key="d1">organization</data>
+  <data key="d2">The cours d’appel are organizations that make decisions regarding nationality disputes.</data>
+  <data key="d3">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="greffiers des tribunaux">
+  <data key="d0">greffiers des tribunaux</data>
+  <data key="d1">person</data>
+  <data key="d2">The greffiers des tribunaux are individuals responsible for sending copies of judgments related to nationality disputes to the secrétariat d’État à la justice.</data>
+  <data key="d3">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Chapitre III">
+  <data key="d0">Chapitre III</data>
+  <data key="d1">category</data>
+  <data key="d2">Chapitre III is a section of the text that discusses the burden of proof in nationality matters.</data>
+  <data key="d3">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Chapitre IV">
+  <data key="d0">Chapitre IV</data>
+  <data key="d1">category</data>
+  <data key="d2">Chapitre IV is a section of the text that discusses the issuance of certificates of Tunisian nationality.</data>
+  <data key="d3">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="ministre de la justice">
+  <data key="d0">ministre de la justice</data>
+  <data key="d1">person</data>
+  <data key="d2">The ministre de la justice is an individual with the authority to issue certificates of Tunisian nationality.</data>
+  <data key="d3">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="agents diplomatiques et consulaires">
+  <data key="d0">agents diplomatiques et consulaires</data>
+  <data key="d1">organization</data>
+  <data key="d2">The agents diplomatiques et consulaires are organizations that have the authority to issue certificates of Tunisian nationality in certain cases.</data>
+  <data key="d3">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="juges cantonaux">
+  <data key="d0">juges cantonaux</data>
+  <data key="d1">person</data>
+  <data key="d2">The juges cantonaux are individuals with the authority to issue certificates of Tunisian nationality in certain cases.</data>
+  <data key="d3">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Décret-loi du Chef du Gouvernement n° 2020-17 du 12 mai 2020">
+  <data key="d0">Décret-loi du Chef du Gouvernement n° 2020-17 du 12 mai 2020</data>
+  <data key="d1">category</data>
+  <data key="d2">Décret-loi du Chef du Gouvernement n° 2020-17 du 12 mai 2020 is a legal decree related to the unique identifier of citizens.</data>
+  <data key="d3">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Chef du Gouvernement">
+  <data key="d0">Chef du Gouvernement</data>
+  <data key="d1">person</data>
+  <data key="d2">The Chef du Gouvernement is an individual who issued the decree related to the unique identifier of citizens.&lt;SEP&gt;The Chef du Gouvernement is the head of the government responsible for proposing and implementing the unique citizen identifier.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8&lt;SEP&gt;chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="ministre des affaires locales">
+  <data key="d0">ministre des affaires locales</data>
+  <data key="d1">person</data>
+  <data key="d2">The ministre des affaires locales is a government official involved in the proposal and implementation of the unique citizen identifier.&lt;SEP&gt;The ministre des affaires locales is an individual who made a proposal related to the decree on the unique identifier of citizens.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8&lt;SEP&gt;chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="ministre des technologies de la communication et de la transformation digitale">
+  <data key="d0">ministre des technologies de la communication et de la transformation digitale</data>
+  <data key="d1">person</data>
+  <data key="d2">The ministre des technologies de la communication et de la transformation digitale is a government official involved in the proposal and implementation of the unique citizen identifier.&lt;SEP&gt;The ministre des technologies de la communication et de la transformation digitale is an individual who made a proposal related to the decree on the unique identifier of citizens.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8&lt;SEP&gt;chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Gouvernement n° 2020-17 du 12 mai 2020">
+  <data key="d0">Gouvernement n° 2020-17 du 12 mai 2020</data>
+  <data key="d1">organization</data>
+  <data key="d2">The Gouvernement n° 2020-17 du 12 mai 2020 is a government document related to the unique citizen identifier.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="JORT n°41 du 12 mai 2020">
+  <data key="d0">JORT n°41 du 12 mai 2020</data>
+  <data key="d1">event</data>
+  <data key="d2">The JORT n°41 du 12 mai 2020 is the official journal where the Gouvernement n° 2020-17 du 12 mai 2020 was published.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Constitution">
+  <data key="d0">Constitution</data>
+  <data key="d1">category</data>
+  <data key="d2">The Constitution is the legal framework that provides the basis for the implementation of the unique citizen identifier.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="loi organique n° 2004-63 du 27 juillet 2004">
+  <data key="d0">loi organique n° 2004-63 du 27 juillet 2004</data>
+  <data key="d1">category</data>
+  <data key="d2">The loi organique n° 2004-63 du 27 juillet 2004 is the organic law that governs the protection of personal data, including the unique citizen identifier.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="loi organique n° 2018-29 du 9 mai 2018">
+  <data key="d0">loi organique n° 2018-29 du 9 mai 2018</data>
+  <data key="d1">category</data>
+  <data key="d2">The loi organique n° 2018-29 du 9 mai 2018 is the organic law that relates to the Code of Local Communities, which may be relevant to the implementation of the unique citizen identifier.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="loi n° 57-3 du 1er août 1957">
+  <data key="d0">loi n° 57-3 du 1er août 1957</data>
+  <data key="d1">category</data>
+  <data key="d2">The loi n° 57-3 du 1er août 1957 is the law that regulates civil status, which may be relevant to the implementation of the unique citizen identifier.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Code de la nationalité tunisienne">
+  <data key="d0">Code de la nationalité tunisienne</data>
+  <data key="d1">category</data>
+  <data key="d2">The Code de la nationalité tunisienne is a legal document that governs Tunisian nationality.&lt;SEP&gt;The Code de la nationalité tunisienne is the legal framework that governs Tunisian nationality, which may be relevant to the implementation of the unique citizen identifier.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8&lt;SEP&gt;chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="loi n° 2010-39 du 26 juillet 2010">
+  <data key="d0">loi n° 2010-39 du 26 juillet 2010</data>
+  <data key="d1">category</data>
+  <data key="d2">The loi n° 2010-39 du 26 juillet 2010 is the law that modifies or complements the previous laws related to civil status and nationality, which may be relevant to the implementation of the unique citizen identifier.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="loi n° 2020-19 du 12 avril 2020">
+  <data key="d0">loi n° 2020-19 du 12 avril 2020</data>
+  <data key="d1">category</data>
+  <data key="d2">The loi n° 2020-19 du 12 avril 2020 is the law that authorizes the Chef du Gouvernement to issue decree-laws in response to the impact of the Covid-19 pandemic, which may be relevant to the implementation of the unique citizen identifier.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Conseil des ministres">
+  <data key="d0">Conseil des ministres</data>
+  <data key="d1">organization</data>
+  <data key="d2">The Conseil des ministres is a council of ministers in Tunisia.&lt;SEP&gt;The Conseil des ministres is the council of ministers responsible for deliberating and making decisions, including the decision to issue the decree-law related to the unique citizen identifier.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8&lt;SEP&gt;chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Registre de l’identifiant unique citoyen">
+  <data key="d0">Registre de l’identifiant unique citoyen</data>
+  <data key="d1">category</data>
+  <data key="d2">Le Registre de l’identifiant unique citoyen est une base de données gérée par l'Unité de gestion du Registre de l’identifiant unique citoyen, contenant des informations sur l'état civil des citoyens.&lt;SEP&gt;The Registre de l’identifiant unique citoyen is a database managed by the Unité de gestion du Registre de l’identifiant unique citoyen, containing information on citizens' civil status.&lt;SEP&gt;The Registre de l’identifiant unique citoyen is the register that will contain the unique citizen identifier and will be managed by the ministry responsible for local affairs.</data>
+  <data key="d3">chunk-a901f6427372df9aace6dd43db7488a9&lt;SEP&gt;chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="ministère chargé des affaires locales">
+  <data key="d0">ministère chargé des affaires locales</data>
+  <data key="d1">organization</data>
+  <data key="d2">Le ministère chargé des affaires locales est responsable de la création de l'Unité de gestion du Registre de l’identifiant unique citoyen et du Conseil de suivi d’utilisation de l'identifiant unique citoyen.&lt;SEP&gt;The ministère chargé des affaires locales is responsible for the creation of the Unité de gestion du Registre de l’identifiant unique citoyen and the Conseil de suivi d’utilisation de l'identifiant unique citoyen.&lt;SEP&gt;The ministère chargé des affaires locales is the ministry responsible for local affairs, which will be in charge of managing the Registre de l’identifiant unique citoyen.</data>
+  <data key="d3">chunk-a901f6427372df9aace6dd43db7488a9&lt;SEP&gt;chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="législation relative à la protection des données à caractère personnel">
+  <data key="d0">législation relative à la protection des données à caractère personnel</data>
+  <data key="d1">category</data>
+  <data key="d2">The législation relative à la protection des données à caractère personnel is the legislation that governs the protection of personal data, including the management of the Registre de l’identifiant unique citoyen.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="identifiant unique citoyen">
+  <data key="d0">identifiant unique citoyen</data>
+  <data key="d1">category</data>
+  <data key="d2">The identifiant unique citoyen is a unique citizen identifier in Tunisia.&lt;SEP&gt;The identifiant unique citoyen is the unique citizen identifier that will be assigned to individuals with Tunisian nationality or those who have acquired Tunisian nationality.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8&lt;SEP&gt;chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="registre des naissances de l’état civil">
+  <data key="d0">registre des naissances de l’état civil</data>
+  <data key="d1">category</data>
+  <data key="d2">The registre des naissances de l’état civil is the register of births in the civil registry, which will be used to assign the unique citizen identifier to individuals with Tunisian nationality.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="mission diplomatique ou consulaire">
+  <data key="d0">mission diplomatique ou consulaire</data>
+  <data key="d1">category</data>
+  <data key="d2">The mission diplomatique ou consulaire is the diplomatic or consular mission that will be responsible for registering individuals with Tunisian nationality born in a foreign country.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="acquisition de la nationalité tunisienne par voie de naturalisation">
+  <data key="d0">acquisition de la nationalité tunisienne par voie de naturalisation</data>
+  <data key="d1">category</data>
+  <data key="d2">The acquisition de la nationalité tunisienne par voie de naturalisation refers to the process of acquiring Tunisian nationality through naturalization, which may be relevant to the assignment of the unique citizen identifier.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="organismes habilités à utiliser l’identifiant unique citoyen">
+  <data key="d0">organismes habilités à utiliser l’identifiant unique citoyen</data>
+  <data key="d1">category</data>
+  <data key="d2">The organismes habilités à utiliser l’identifiant unique citoyen are the authorized organizations that will be allowed to use the unique citizen identifier for specific purposes, which will be determined by a government decree after consultation with the national data protection authority.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Instance nationale de protection des données à caractère personnel">
+  <data key="d0">Instance nationale de protection des données à caractère personnel</data>
+  <data key="d1">organization</data>
+  <data key="d2">The Instance nationale de protection des données à caractère personnel is a national organization responsible for the protection of personal data in Tunisia.&lt;SEP&gt;The Instance nationale de protection des données à caractère personnel is an organization responsible for handling oppositions related to violations of data protection norms and overseeing the management of personal data registries.&lt;SEP&gt;The Instance nationale de protection des données à caractère personnel is the national data protection authority that will provide advice and guidance on the use of the unique citizen identifier and the organizations authorized to use it.</data>
+  <data key="d3">chunk-e71f13222c8c4bfa0c570eefbe82a3fa&lt;SEP&gt;chunk-bd221efe114065a937f52752c88f91f8&lt;SEP&gt;chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="contenu et les spécifications techniques de l'identifiant unique citoyen">
+  <data key="d0">contenu et les spécifications techniques de l'identifiant unique citoyen</data>
+  <data key="d1">category</data>
+  <data key="d2">The contenu et les spécifications techniques de l'identifiant unique citoyen are the content and technical specifications of the unique citizen identifier, which will be determined by a government decree after consultation with the national data protection authority.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="règles régissant la tenue et la gestion de son Registre">
+  <data key="d0">règles régissant la tenue et la gestion de son Registre</data>
+  <data key="d1">category</data>
+  <data key="d2">The règles régissant la tenue et la gestion de son Registre are the rules governing the maintenance and management of the Registre de l’identifiant unique citoyen, which will be determined by a government decree after consultation with the national data protection authority.</data>
+  <data key="d3">chunk-bd221efe114065a937f52752c88f91f8</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="loi n° 63-7">
+  <data key="d0">loi n° 63-7</data>
+  <data key="d1">category</data>
+  <data key="d2">The loi n° 63-7 is a specific law related to the Code de la nationalité tunisienne.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="loi n° 2010-55">
+  <data key="d0">loi n° 2010-55</data>
+  <data key="d1">category</data>
+  <data key="d2">The loi n° 2010-55 is a specific law that modified the Code de la nationalité tunisienne.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="loi n° 2004-5">
+  <data key="d0">loi n° 2004-5</data>
+  <data key="d1">category</data>
+  <data key="d2">The loi n° 2004-5 is a law related to cybersecurity in Tunisia.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="décret-loi du Chef du Gouvernement n° 2020-17">
+  <data key="d0">décret-loi du Chef du Gouvernement n° 2020-17</data>
+  <data key="d1">category</data>
+  <data key="d2">The décret-loi du Chef du Gouvernement n° 2020-17 is a decree-law related to the unique citizen identifier in Tunisia.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="décret n° 2012-1997">
+  <data key="d0">décret n° 2012-1997</data>
+  <data key="d1">category</data>
+  <data key="d2">The décret n° 2012-1997 is a decree related to the Ministry of Information and Communication Technologies in Tunisia.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="décret n° 2012-1998">
+  <data key="d0">décret n° 2012-1998</data>
+  <data key="d1">category</data>
+  <data key="d2">The décret n° 2012-1998 is a decree related to the organization of the Ministry of Information and Communication Technologies in Tunisia.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="décret gouvernemental n° 2016-365">
+  <data key="d0">décret gouvernemental n° 2016-365</data>
+  <data key="d1">category</data>
+  <data key="d2">The décret gouvernemental n° 2016-365 is a governmental decree related to the creation of the Ministry of Local Affairs in Tunisia.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="décret Présidentiel n° 2020-19">
+  <data key="d0">décret Présidentiel n° 2020-19</data>
+  <data key="d1">category</data>
+  <data key="d2">The décret Présidentiel n° 2020-19 is a presidential decree related to the appointment of the Prime Minister and government members in Tunisia.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="ministère des technologies de l’information et de la communication">
+  <data key="d0">ministère des technologies de l’information et de la communication</data>
+  <data key="d1">organization</data>
+  <data key="d2">The ministère des technologies de l’information et de la communication is a government ministry responsible for information and communication technologies in Tunisia.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="ministère des affaires locales">
+  <data key="d0">ministère des affaires locales</data>
+  <data key="d1">organization</data>
+  <data key="d2">The ministère des affaires locales is a government ministry responsible for local affairs in Tunisia.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="ministère des finances">
+  <data key="d0">ministère des finances</data>
+  <data key="d1">organization</data>
+  <data key="d2">The ministère des finances is a government ministry responsible for financial matters in Tunisia.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Tribunal administratif">
+  <data key="d0">Tribunal administratif</data>
+  <data key="d1">organization</data>
+  <data key="d2">The Tribunal administratif is an administrative court in Tunisia.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="décret gouvernemental">
+  <data key="d0">décret gouvernemental</data>
+  <data key="d1">category</data>
+  <data key="d2">The décret gouvernemental is a type of governmental decree in Tunisia.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Registre de l'identifiant unique citoyen">
+  <data key="d0">Registre de l'identifiant unique citoyen</data>
+  <data key="d1">category</data>
+  <data key="d2">The Registre de l'identifiant unique citoyen is a registry for the unique citizen identifier in Tunisia.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="QR code">
+  <data key="d0">QR code</data>
+  <data key="d1">category</data>
+  <data key="d2">A QR code is a type of barcode that can be used to store information, such as the unique citizen identifier, on documents in Tunisia.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Registre">
+  <data key="d0">Registre</data>
+  <data key="d1">category</data>
+  <data key="d2">The Registre is a data registry that stores and maintains personal information, including names, birth dates, nationalities, and other relevant data.&lt;SEP&gt;The Registre is a system for recording and managing information related to the unique citizen identifier in Tunisia.</data>
+  <data key="d3">chunk-e71f13222c8c4bfa0c570eefbe82a3fa&lt;SEP&gt;chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="système d'information">
+  <data key="d0">système d'information</data>
+  <data key="d1">category</data>
+  <data key="d2">The système d'information is an information system used for the registration, transmission, and exchange of information related to the unique citizen identifier in Tunisia.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="loi organique relative à la protection des données à caractère personnel">
+  <data key="d0">loi organique relative à la protection des données à caractère personnel</data>
+  <data key="d1">category</data>
+  <data key="d2">The loi organique relative à la protection des données à caractère personnel is an organic law related to the protection of personal data in Tunisia.</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Unité de gestion du Registre de l’identifiant unique citoyen">
+  <data key="d0">Unité de gestion du Registre de l’identifiant unique citoyen</data>
+  <data key="d1">organization</data>
+  <data key="d2">L'Unité de gestion du Registre de l’identifiant unique citoyen est une unité créée au sein du ministère chargé des affaires locales, chargée de gérer le Registre et la base de données de l'état civil, mettre en place des mécanismes d’attribution de l'identifiant, assurer la qualité, la sécurité et la mise à jour des données du Registre, assurer le bon fonctionnement du système d'information de l’identifiant unique citoyen, mettre en place des mécanismes d'accès aux données du Registre conformément à la législation et réglementation en vigueur, mettre en place les mécanismes nécessaires permettant aux personnes de consulter les opérations relatives à leurs données personnelles, leur historique et l’identité de l’organisme ayant procédé à l’accès, encourager l'utilisation des services liés à l’identifiant, et présenter des propositions dans le cadre de la stratégie d'utilisation de l'identifiant.&lt;SEP&gt;The Unité de gestion du Registre de l’identifiant unique citoyen is a unit created within the ministère chargé des affaires locales, responsible for managing the Registre and the civil status database, implementing mechanisms for assigning the identifier, ensuring the quality, security, and updating of the Registre data, ensuring the proper functioning of the unique citizen identifier information system, implementing mechanisms for accessing the Registre data in accordance with applicable legislation and regulations, establishing the necessary mechanisms for individuals to consult the operations related to their personal data, history, and the identity of the organization that accessed it, promoting the use of services related to the identifier, and making proposals within the framework of the identifier's use strategy.&lt;SEP&gt;The Unité de gestion du Registre de l’identifiant unique citoyen is a unit within the ministry responsible for managing the Registre de l’identifiant unique citoyen and ensuring compliance with data protection regulations.</data>
+  <data key="d3">chunk-e71f13222c8c4bfa0c570eefbe82a3fa&lt;SEP&gt;chunk-a901f6427372df9aace6dd43db7488a9</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 12">
+  <data key="d0">Article 12</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 12 is a section of the document that specifies the duration for which the data is retained in the registry.</data>
+  <data key="d3">chunk-e71f13222c8c4bfa0c570eefbe82a3fa</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 13">
+  <data key="d0">Article 13</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 13 is a section of the document that assigns the responsibility of managing the registry to the minister in charge of local affairs and outlines the use of a digital platform for its management.</data>
+  <data key="d3">chunk-e71f13222c8c4bfa0c570eefbe82a3fa</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 14">
+  <data key="d0">Article 14</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 14 is a section of the document that establishes the probative value of the data recorded in the registry and its potential use as an alternative to paper records.</data>
+  <data key="d3">chunk-e71f13222c8c4bfa0c570eefbe82a3fa</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 15">
+  <data key="d0">Article 15</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 15 is a section of the document that addresses the process for reporting any discrepancies between the data in the registry and paper records.</data>
+  <data key="d3">chunk-e71f13222c8c4bfa0c570eefbe82a3fa</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 16">
+  <data key="d0">Article 16</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 16 is a section of the document that outlines the timeline for updating the data in the registry by the civil registration officers.</data>
+  <data key="d3">chunk-e71f13222c8c4bfa0c570eefbe82a3fa</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 17">
+  <data key="d0">Article 17</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 17 is a section of the document that specifies the authorized entities that can access the data in the registry for the purpose of carrying out their duties.</data>
+  <data key="d3">chunk-e71f13222c8c4bfa0c570eefbe82a3fa</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 18">
+  <data key="d0">Article 18</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 18 is a section of the document that defines the conditions and procedures for accessing the data in the registry in accordance with data protection legislation.</data>
+  <data key="d3">chunk-e71f13222c8c4bfa0c570eefbe82a3fa</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 19">
+  <data key="d0">Article 19</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 19 is a section of the document that prohibits organizations from demanding citizens to provide data that is already recorded in the registry.</data>
+  <data key="d3">chunk-e71f13222c8c4bfa0c570eefbe82a3fa</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 20">
+  <data key="d0">Article 20</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 20 is a section of the document that requires the recording of all operations related to the consultation, update, modification, or transmission of personal data in the registry.</data>
+  <data key="d3">chunk-e71f13222c8c4bfa0c570eefbe82a3fa</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 21">
+  <data key="d0">Article 21</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 21 is a section of the document that outlines the obligations of the authorized entities to facilitate the control missions of the Instance nationale de protection des données à caractère personnel.</data>
+  <data key="d3">chunk-e71f13222c8c4bfa0c570eefbe82a3fa</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 22">
+  <data key="d0">Article 22</data>
+  <data key="d1">category</data>
+  <data key="d2">Article 22 is a section of the document that requires the authorized entities to conduct periodic security audits of their information systems and networks in accordance with relevant cybersecurity legislation.</data>
+  <data key="d3">chunk-e71f13222c8c4bfa0c570eefbe82a3fa</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Centre national de l’informatique">
+  <data key="d0">Centre national de l’informatique</data>
+  <data key="d1">organization</data>
+  <data key="d2">Le Centre national de l’informatique est chargé des missions techniques et opérationnelles liées à la gestion du registre, sous la supervision de l’Unité de gestion du Registre de l’identifiant unique citoyen.&lt;SEP&gt;The Centre national de l’informatique is responsible for the technical and operational missions related to the management of the Registre, under the supervision of the Unité de gestion du Registre de l’identifiant unique citoyen.</data>
+  <data key="d3">chunk-a901f6427372df9aace6dd43db7488a9</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Conseil de suivi d’utilisation de l'identifiant unique citoyen">
+  <data key="d0">Conseil de suivi d’utilisation de l'identifiant unique citoyen</data>
+  <data key="d1">organization</data>
+  <data key="d2">Le Conseil de suivi d’utilisation de l'identifiant unique citoyen est créé auprès du ministère chargé des affaires locales, chargé de veiller au bon fonctionnement, à la bonne gestion et utilisation du Registre de l'identifiant unique citoyen.&lt;SEP&gt;The Conseil de suivi d’utilisation de l'identifiant unique citoyen is created within the ministère chargé des affaires locales, responsible for ensuring the proper functioning, management, and use of the Registre.</data>
+  <data key="d3">chunk-a901f6427372df9aace6dd43db7488a9</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Secrétariat du Conseil">
+  <data key="d0">Secrétariat du Conseil</data>
+  <data key="d1">organization</data>
+  <data key="d2">Le Secrétariat du Conseil est responsable de la gestion administrative du conseil, y compris la préparation de l'ordre du jour, l'envoi des convocations, la rédaction des procès-verbaux et la tenue des dossiers.</data>
+  <data key="d3">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Direction Générale de l'Informatique et du Développement des Applications Informatiques">
+  <data key="d0">Direction Générale de l'Informatique et du Développement des Applications Informatiques</data>
+  <data key="d1">organization</data>
+  <data key="d2">La Direction Générale de l'Informatique et du Développement des Applications Informatiques est responsable du secrétariat du conseil et de la préparation des travaux du conseil.</data>
+  <data key="d3">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Ministère des Affaires Locales">
+  <data key="d0">Ministère des Affaires Locales</data>
+  <data key="d1">organization</data>
+  <data key="d2">Le Ministère des Affaires Locales est responsable du secrétariat du conseil et de l'exécution du présent décret gouvernemental.</data>
+  <data key="d3">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Ministère des Technologies de la Communication et de la Transformation Digitale">
+  <data key="d0">Ministère des Technologies de la Communication et de la Transformation Digitale</data>
+  <data key="d1">organization</data>
+  <data key="d2">Le Ministère des Technologies de la Communication et de la Transformation Digitale est responsable de l'exécution du présent décret gouvernemental.</data>
+  <data key="d3">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="15 mai 2020">
+  <data key="d0">15 mai 2020</data>
+  <data key="d1">event</data>
+  <data key="d2">Le présent décret gouvernemental a été signé le 15 mai 2020.&lt;SEP&gt;The present governmental decree was signed on May 15, 2020.</data>
+  <data key="d3">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Lotfi Zitoun">
+  <data key="d0">Lotfi Zitoun</data>
+  <data key="d1">person</data>
+  <data key="d2">Lotfi Zitoun est le ministre des affaires locales qui a contresigné le présent décret gouvernemental.&lt;SEP&gt;Lotfi Zitoun is the minister of local affairs who countersigned the present governmental decree.</data>
+  <data key="d3">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Mohamed Fadhel Kraiem">
+  <data key="d0">Mohamed Fadhel Kraiem</data>
+  <data key="d1">person</data>
+  <data key="d2">Mohamed Fadhel Kraiem est le ministre des technologies de la communication et de la transformation digitale qui a contresigné le présent décret gouvernemental.&lt;SEP&gt;Mohamed Fadhel Kraiem is the minister of technologies of communication and digital transformation who countersigned the present governmental decree.</data>
+  <data key="d3">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Elyes Fakhfakh">
+  <data key="d0">Elyes Fakhfakh</data>
+  <data key="d1">person</data>
+  <data key="d2">Elyes Fakhfakh est le chef du gouvernement qui a contresigné le présent décret gouvernemental.&lt;SEP&gt;Elyes Fakhfakh is the head of government who countersigned the present governmental decree.</data>
+  <data key="d3">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Secrétariat du conseil">
+  <data key="d0">Secrétariat du conseil</data>
+  <data key="d1">organization</data>
+  <data key="d2">The Secrétariat du conseil is responsible for the administrative management of the council, including preparing the agenda, sending invitations, drafting meeting minutes, and overall preparation of the council's work.</data>
+  <data key="d3">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Direction Générale de l'informatique et du développement des applications informatiques">
+  <data key="d0">Direction Générale de l'informatique et du développement des applications informatiques</data>
+  <data key="d1">organization</data>
+  <data key="d2">The Direction Générale de l'informatique et du développement des applications informatiques is responsible for the Secrétariat du conseil and the preparation of the council's work.</data>
+  <data key="d3">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Ministère des affaires locales">
+  <data key="d0">Ministère des affaires locales</data>
+  <data key="d1">organization</data>
+  <data key="d2">The Ministère des affaires locales is responsible for the Secrétariat du conseil and the execution of the present governmental decree.</data>
+  <data key="d3">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Ministère des technologies de la communication et de la transformation digitale">
+  <data key="d0">Ministère des technologies de la communication et de la transformation digitale</data>
+  <data key="d1">organization</data>
+  <data key="d2">The Ministère des technologies de la communication et de la transformation digitale is responsible for the execution of the present governmental decree.</data>
+  <data key="d3">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Journal officiel de la République tunisienne">
+  <data key="d0">Journal officiel de la République tunisienne</data>
+  <data key="d1">category</data>
+  <data key="d2">The Journal officiel de la République tunisienne is the official journal in which the present governmental decree will be published.</data>
+  <data key="d3">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="validité ou de la nullité de la déclaration">
+  <data key="d0">validité ou de la nullité de la déclaration</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d2">The tribunal de première instance decides on the validity or nullity of the déclaration, after the individual appeals the decision of the secrétaire d’Etat à la justice, as specified in Article 41.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="conditions requises">
+  <data key="d0">conditions requises</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d2">If the conditions requises by the law are not met, the secrétaire d’État à la justice declares the demande irrecevable, as specified in Article 43.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="secrétaire d’État à la justice">
+  <data key="d0">secrétaire d’État à la justice</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d2">The secrétaire d’État à la justice is responsible for declaring the demande irrecevable if the conditions requises are not met, as specified in Article 43.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Article 46">
+  <data key="d0">Article 46</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d2">Article 46 specifies the notification process for measures related to the loss of Tunisian nationality, déchéance, retrait de la nationalité tunisienne, and opposition to the acquisition of Tunisian nationality.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="perte de la nationalité tunisienne">
+  <data key="d0">perte de la nationalité tunisienne</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d2">Lorsqu’il s’agit de prononcer la perte de la nationalité tunisienne en application des articles 31 et 32, la déchéance ou le retrait de cette nationalité, comme au cas d’opposition du gouvernement à l’acquisition de la nationalité tunisienne, the secrétaire d’Etat à la justice notifies the individual of the measure, as specified in Article 46.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="opposition du gouvernement à l’acquisition de la nationalité tunisienne">
+  <data key="d0">opposition du gouvernement à l’acquisition de la nationalité tunisienne</data>
+  <data key="d3">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d2">Lorsqu’il s’agit de prononcer la perte de la nationalité tunisienne en application des articles 31 et 32, la déchéance ou le retrait de cette nationalité, comme au cas d’opposition du gouvernement à l’acquisition de la nationalité tunisienne, the secrétaire d’Etat à la justice notifies the individual of the measure, as specified in Article 46.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="nationality dispute">
+  <data key="d0">nationality dispute</data>
+  <data key="d3">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d2">The Tribunal de première instance has jurisdiction over nationality disputes and is the court where such disputes are initially heard.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="certificat de nationalité tunisienne">
+  <data key="d0">certificat de nationalité tunisienne</data>
+  <data key="d3">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d2">The ministre de la justice has the authority to issue certificates of Tunisian nationality.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="refus de délivrer un certificat de nationalité">
+  <data key="d0">refus de délivrer un certificat de nationalité</data>
+  <data key="d3">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d2">The tribunal de première instance is where individuals can appeal the refusal to issue a certificate of Tunisian nationality.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="sécurité informatique">
+  <data key="d0">sécurité informatique</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d2">The loi n° 2004-5 is a law related to cybersecurity in Tunisia.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="identifiant unique du citoyen">
+  <data key="d0">identifiant unique du citoyen</data>
+  <data key="d3">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d2">The décret-loi du Chef du Gouvernement n° 2020-17 is a decree-law related to the unique citizen identifier in Tunisia.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+</node>
+<edge source="Code de la Nationalite Tunisienne" target="Tunisian Nationality">
+  <data key="d5">9.0</data>
+  <data key="d6">The Code de la Nationalite Tunisienne defines the legal framework for Tunisian nationality.</data>
+  <data key="d7">legal framework, nationality</data>
+  <data key="d8">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Code de la Nationalite Tunisienne" target="Article 1">
+  <data key="d5">8.0</data>
+  <data key="d6">The Code de la Nationalite Tunisienne defines individuals who have Tunisian nationality at birth as their nationality of origin.</data>
+  <data key="d7">nationality definition, origin</data>
+  <data key="d8">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Code de la Nationalite Tunisienne" target="Article 2">
+  <data key="d5">7.0</data>
+  <data key="d6">The Code de la Nationalite Tunisienne states that the conditions for acquiring and losing Tunisian nationality after birth are governed by the current law.</data>
+  <data key="d7">acquisition, loss, legal conditions</data>
+  <data key="d8">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Code de la Nationalite Tunisienne" target="Article 3">
+  <data key="d5">6.0</data>
+  <data key="d6">The Code de la Nationalite Tunisienne applies new laws regarding Tunisian nationality to individuals born before the effective date of the laws, as long as they have not yet reached the age of majority.</data>
+  <data key="d7">retroactive laws, age of majority</data>
+  <data key="d8">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Code de la Nationalite Tunisienne" target="Article 4">
+  <data key="d5">8.0</data>
+  <data key="d6">The Code de la Nationalite Tunisienne defines a person as an adult when they have reached the age of 18.</data>
+  <data key="d7">legal definition, adulthood</data>
+  <data key="d8">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Code de la Nationalite Tunisienne" target="Article 5">
+  <data key="d5">7.0</data>
+  <data key="d6">The Code de la Nationalite Tunisienne defines the term 'in Tunisia' to include the entire Tunisian territory, territorial waters, and Tunisian boats, ships, and aircraft.</data>
+  <data key="d7">territorial definition, Tunisian jurisdiction</data>
+  <data key="d8">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Code de la Nationalite Tunisienne" target="Article 6">
+  <data key="d5">9.0</data>
+  <data key="d6">The Code de la Nationalite Tunisienne, which has been replaced, stated that a child is Tunisian if their father or mother is Tunisian.</data>
+  <data key="d7">parental nationality, child nationality</data>
+  <data key="d8">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Code de la Nationalite Tunisienne" target="Article 7">
+  <data key="d5">8.0</data>
+  <data key="d6">The Code de la Nationalite Tunisienne states that a child born in Tunisia, whose father and grandfather were also born in Tunisia, is considered Tunisian.</data>
+  <data key="d7">birthright nationality, generational nationality</data>
+  <data key="d8">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Code de la Nationalite Tunisienne" target="Article 8">
+  <data key="d5">7.0</data>
+  <data key="d6">The Code de la Nationalite Tunisienne states that a child born in Tunisia to stateless parents who have resided in Tunisia for at least five years is considered Tunisian.</data>
+  <data key="d7">stateless parents, residency requirement</data>
+  <data key="d8">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Code de la Nationalite Tunisienne" target="Article 9">
+  <data key="d5">8.0</data>
+  <data key="d6">The Code de la Nationalite Tunisienne states that a child born in Tunisia to unknown parents is considered Tunisian.</data>
+  <data key="d7">unknown parents, birthright nationality</data>
+  <data key="d8">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Code de la Nationalite Tunisienne" target="Article 10">
+  <data key="d5">7.0</data>
+  <data key="d6">The Code de la Nationalite Tunisienne states that a newborn child found in Tunisia is presumed to have been born in Tunisia until proven otherwise.</data>
+  <data key="d7">foundling, birth presumption</data>
+  <data key="d8">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Code de la Nationalite Tunisienne" target="Article 11">
+  <data key="d5">8.0</data>
+  <data key="d6">The Code de la Nationalite Tunisienne states that a child who is Tunisian under the provisions of this chapter is considered to have been Tunisian from birth, even if the conditions for Tunisian nationality are established after birth.</data>
+  <data key="d7">birthright nationality, retroactive nationality</data>
+  <data key="d8">chunk-78774f83ff89e78771bdf2414b0e2518</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="World Athletics Championship" target="Tokyo">
+  <data key="d5">8.0</data>
+  <data key="d6">The World Athletics Championship is being hosted in Tokyo.</data>
+  <data key="d7">event location, international competition</data>
+  <data key="d8">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="World Athletics Championship" target="Noah Carter">
+  <data key="d5">10.0</data>
+  <data key="d6">Noah Carter set a new record in the 100m sprint at the World Athletics Championship.</data>
+  <data key="d7">athlete achievement, record-breaking</data>
+  <data key="d8">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="World Athletics Championship" target="Tunis">
+  <data key="d5">8.0</data>
+  <data key="d6">The World Athletics Championship is being hosted in Tunis.</data>
+  <data key="d7">event location, international competition</data>
+  <data key="d8">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Noah Carter" target="100m Sprint Record">
+  <data key="d5">10.0</data>
+  <data key="d6">Noah Carter set a new 100m sprint record at the championship.</data>
+  <data key="d7">athlete achievement, record-breaking</data>
+  <data key="d8">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Noah Carter" target="Carbon-Fiber Spikes">
+  <data key="d5">7.0</data>
+  <data key="d6">Noah Carter used carbon-fiber spikes to enhance performance during the race.</data>
+  <data key="d7">athletic equipment, performance boost</data>
+  <data key="d8">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="100m Sprint Record" target="World Athletics Federation">
+  <data key="d5">9.0</data>
+  <data key="d6">The World Athletics Federation is responsible for validating and recognizing new sprint records.</data>
+  <data key="d7">sports regulation, record certification</data>
+  <data key="d8">chunk-d5a3a4fa40729f1d20d445ef249aae43</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="nationalité tunisienne" target="loi sur le recrutement de l’armée">
+  <data key="d5">8.0</data>
+  <data key="d6">The loi sur le recrutement de l’armée imposes obligations on individuals regarding military recruitment, which can affect their nationalité tunisienne.</data>
+  <data key="d7">legal obligations, citizenship requirements</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="nationalité tunisienne" target="déchéance">
+  <data key="d5">9.0</data>
+  <data key="d6">La déchéance can result in the loss of nationalité tunisienne, as it refers to the deprivation of citizenship rights and status.</data>
+  <data key="d7">loss of citizenship, legal status</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="nationalité tunisienne" target="déclaration">
+  <data key="d5">6.0</data>
+  <data key="d6">La déclaration is a formal statement that can be used to assert or renounce nationalité tunisienne, subject to the conditions specified by the law.</data>
+  <data key="d7">formal statement, citizenship assertion</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="déclaration" target="secretaire d’Etat à la justice">
+  <data key="d5">15.0</data>
+  <data key="d6">Le secretaire d’Etat à la justice is responsible for refusing to register the déclaration if the individual does not meet the required conditions, as specified in Article 41.&lt;SEP&gt;The déclaration can be refused for registration by the secrétaire d’Etat à la justice if the individual does not meet the required conditions, as specified in Article 41.</data>
+  <data key="d7">government official, registration refusal&lt;SEP&gt;registration refusal, conditions not met</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="déclaration" target="tribunal de première instance">
+  <data key="d5">8.0</data>
+  <data key="d6">The individual can appeal the decision of the secrétaire d’Etat à la justice to refuse the registration of the déclaration by seeking recourse before the tribunal de première instance, as specified in Article 41.</data>
+  <data key="d7">appeal process, legal recourse</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="décret" target="déchéance">
+  <data key="d5">7.0</data>
+  <data key="d6">Le décret can be used to implement or extend the déchéance of nationalité tunisienne, as specified by the law.</data>
+  <data key="d7">legal instrument, implementation of deprivation</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="décret" target="secretaire d’Etat à la justice">
+  <data key="d5">7.0</data>
+  <data key="d6">Le secretaire d’Etat à la justice is responsible for issuing or notifying the décret, which can involve decisions related to nationalité tunisienne.</data>
+  <data key="d7">government official, legal notification</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Président de la République" target="décisions relatives aux naturalisations">
+  <data key="d5">9.0</data>
+  <data key="d6">The Président de la République decides whether to grant or reject the naturalization request, as well as the possibility of ajournement, as specified in Article 45.</data>
+  <data key="d7">decision-making authority, naturalization request</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Président de la République" target="(*)">
+  <data key="d5">6.0</data>
+  <data key="d6">(*) is a symbol used to indicate a footnote or additional information, which is relevant to the decisions made by the Président de la République, as specified in Article 45.</data>
+  <data key="d7">footnote, additional information</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Ministre" target="Ministère">
+  <data key="d5">209.0</data>
+  <data key="d6">Le texte mentionne le Ministre ou le Ministère, mais ne fournit pas de détails sur leur relation.&lt;SEP&gt;The text mentions the term 'Ministre' or 'Ministère', but no specific details are provided about their relationship.</data>
+  <data key="d7">N/A</data>
+  <data key="d8">chunk-39ef83b2ef6f3575d4de965cb81ee305</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="loi sur le recrutement de l’armée" target="condamné">
+  <data key="d5">8.0</data>
+  <data key="d6">The loi sur le recrutement de l’armée imposes obligations on individuals, and condamné refers to individuals who have been convicted for failing to fulfill these obligations.</data>
+  <data key="d7">legal obligations, conviction</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="loi sur le recrutement de l’armée" target="Article 34">
+  <data key="d5">7.0</data>
+  <data key="d6">Article 34 is a specific article within the law that outlines the conditions under which déchéance is incurred, which is relevant to the obligations imposed by the loi sur le recrutement de l’armée.</data>
+  <data key="d7">legal conditions, déchéance</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="déchéance" target="Article 33">
+  <data key="d5">9.0</data>
+  <data key="d6">Article 33 is a specific article within the law that defines the acts that can lead to déchéance, which is the loss or deprivation of a right or status.</data>
+  <data key="d7">legal acts, loss of rights</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="déchéance" target="Article 35">
+  <data key="d5">9.0</data>
+  <data key="d6">Article 35 allows for the extension of déchéance to the spouse and minor unmarried children of the individual, provided they have retained another foreign nationality.</data>
+  <data key="d7">extension of déchéance, family members</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="déchéance" target="femme">
+  <data key="d5">6.0</data>
+  <data key="d6">La déchéance can be extended to the wife of the individual, but only if it is also extended to the children. This is specified in Article 35.</data>
+  <data key="d7">extension of déchéance, family members</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="déchéance" target="enfants mineurs non mariés">
+  <data key="d5">7.0</data>
+  <data key="d6">La déchéance can be extended to the minor unmarried children of the individual, but only if they have retained another foreign nationality. This is specified in Article 35.</data>
+  <data key="d7">extension of déchéance, family members</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="déchéance" target="nationalité étrangère">
+  <data key="d5">8.0</data>
+  <data key="d6">La déchéance is only extended to the spouse and minor unmarried children if they have retained another foreign nationality, as specified in Article 35.</data>
+  <data key="d7">foreign nationality, déchéance extension</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="délai" target="Article 34">
+  <data key="d5">8.0</data>
+  <data key="d6">Article 34 specifies that déchéance is only incurred if the acts mentioned in Article 33 occur within a specific délai of ten years from the date of acquiring Tunisian nationality.</data>
+  <data key="d7">time frame, déchéance conditions</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="délai" target="acquisition de la nationalité tunisienne">
+  <data key="d5">7.0</data>
+  <data key="d6">The acquisition de la nationalité tunisienne must occur within a délai of ten years from the date of acquiring Tunisian nationality, as specified in Article 34.</data>
+  <data key="d7">time frame, nationality acquisition</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="naturalisation" target="Article 36">
+  <data key="d5">7.0</data>
+  <data key="d6">La naturalisation can be withdrawn if it is discovered that the individual did not meet the required conditions for naturalization, as specified in Article 36.</data>
+  <data key="d7">withdrawal of naturalization, conditions not met</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="secretaire d’Etat à la justice" target="déclarations de la nationalité">
+  <data key="d5">24.0</data>
+  <data key="d6">Le secretaire d’Etat à la justice is responsible for the registration of déclarations de la nationalité, as specified in Article 40.&lt;SEP&gt;Les déclarations de la nationalité must be registered by the secrétaire d’Etat à la justice, as specified in Article 40.&lt;SEP&gt;Les déclarations de la nationalité must be submitted to the secrétaire d’Etat à la justice or sent to the department by registered mail with acknowledgment of receipt, as specified in Article 39.</data>
+  <data key="d7">formal requirement, registration process&lt;SEP&gt;formal requirement, submission process&lt;SEP&gt;government official, registration process</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Section III" target="Retrait de la nationalité tunisienne">
+  <data key="d5">9.0</data>
+  <data key="d6">Section III of the law deals with the withdrawal of Tunisian nationality, which is relevant to the déchéance and retrait de la nationalité tunisienne.</data>
+  <data key="d7">nationality withdrawal, legal section</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Retrait de la nationalité tunisienne" target="Article 36">
+  <data key="d5">8.0</data>
+  <data key="d6">Article 36 allows for the withdrawal of naturalization if it is discovered that the individual did not meet the required conditions for naturalization.</data>
+  <data key="d7">withdrawal of naturalization, conditions not met</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Retrait de la nationalité tunisienne" target="Article 37">
+  <data key="d5">9.0</data>
+  <data key="d6">Article 37 allows for the revocation of naturalization if the individual made false declarations, engaged in fraudulent activities, or presented false or erroneous documents.</data>
+  <data key="d7">revocation of naturalization, false declarations</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Article 37" target="fausse déclaration">
+  <data key="d5">8.0</data>
+  <data key="d6">La naturalisation can be revoked if the individual made a fausse déclaration, employed manoeuvres frauduleuses, or knowingly presented a document containing a false or erroneous statement, as specified in Article 37.</data>
+  <data key="d7">revocation of naturalization, false declarations</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Article 37" target="manoeuvres frauduleuses">
+  <data key="d5">7.0</data>
+  <data key="d6">La naturalisation can be revoked if the individual employed manoeuvres frauduleuses, made false declarations, or knowingly presented a document containing a false or erroneous statement, as specified in Article 37.</data>
+  <data key="d7">revocation of naturalization, fraudulent activities</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Article 37" target="pièce contenant une assertion mensongère ou erronée">
+  <data key="d5">8.0</data>
+  <data key="d6">La naturalisation can be revoked if the individual knowingly presented a pièce contenant une assertion mensongère ou erronée, which refers to a document containing a false or erroneous statement, as specified in Article 37.</data>
+  <data key="d7">revocation of naturalization, false documents</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Article 37" target="découverte de la fraude">
+  <data key="d5">7.0</data>
+  <data key="d6">La naturalisation can be revoked if the fraud is discovered within a specific délai of two years from the date of discovery, as specified in Article 37.</data>
+  <data key="d7">revocation of naturalization, fraud discovery</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Article 38" target="décret de retrait">
+  <data key="d5">8.0</data>
+  <data key="d6">Article 38 addresses the validity of acts performed prior to the withdrawal of naturalization, stating that the validity of such acts cannot be contested based on the individual's non-acquisition of Tunisian nationality.</data>
+  <data key="d7">validity of acts, withdrawal of naturalization</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="actes" target="décret de retrait">
+  <data key="d5">7.0</data>
+  <data key="d6">The validity of acts performed prior to the withdrawal of naturalization cannot be contested based on the individual's non-acquisition of Tunisian nationality, as specified in Article 38.</data>
+  <data key="d7">validity of acts, withdrawal of naturalization</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="décret de retrait" target="qualité de tunisien">
+  <data key="d5">6.0</data>
+  <data key="d6">The validity of acts performed prior to the withdrawal of naturalization cannot be contested based on the individual's non-acquisition of qualité de tunisien, as specified in Article 38.</data>
+  <data key="d7">validity of acts, withdrawal of naturalization</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="décret de retrait" target="Article 46">
+  <data key="d5">9.0</data>
+  <data key="d6">Article 46 specifies the notification process for measures related to the loss of Tunisian nationality, déchéance, retrait de la nationalité tunisienne, and opposition to the acquisition of Tunisian nationality.</data>
+  <data key="d7">notification process, loss of nationality</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="TITRE II" target="PROCÉDURE ADMINISTRATIVE">
+  <data key="d5">9.0</data>
+  <data key="d6">TITRE II of the law focuses on administrative procedures, which includes the déclarations de la nationalité and decisions related to naturalizations.</data>
+  <data key="d7">administrative procedures, déclarations de la nationalité</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="déclarations de la nationalité" target="papier timbré">
+  <data key="d5">8.0</data>
+  <data key="d6">Les déclarations de la nationalité must be made on papier timbré, which refers to stamped paper, as specified in Article 39.</data>
+  <data key="d7">formal requirement, stamped paper</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="déclarations de la nationalité" target="double exemplaire">
+  <data key="d5">7.0</data>
+  <data key="d6">Les déclarations de la nationalité must be made in double exemplaire, meaning a duplicate or copy, as specified in Article 39.</data>
+  <data key="d7">formal requirement, duplicate copy</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="déclarations de la nationalité" target="élection de domicile">
+  <data key="d5">8.0</data>
+  <data key="d6">Les déclarations de la nationalité must include élection de domicile, which refers to the choice of residence or declaration of residence by the individual, as specified in Article 39.</data>
+  <data key="d7">formal requirement, choice of residence</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="déclarations de la nationalité" target="signature légalisée">
+  <data key="d5">7.0</data>
+  <data key="d6">Les déclarations de la nationalité must have the signature légalisée of the individual, which refers to a notarized signature, as specified in Article 39.</data>
+  <data key="d7">formal requirement, notarized signature</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="déclarations de la nationalité" target="officier public">
+  <data key="d5">8.0</data>
+  <data key="d6">Les déclarations de la nationalité must be established by an officier public, which refers to a public officer or official, if the signature is not notarized, as specified in Article 39.</data>
+  <data key="d7">formal requirement, public officer</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="déclarations de la nationalité" target="pièces justificatives">
+  <data key="d5">9.0</data>
+  <data key="d6">Les déclarations de la nationalité must be accompanied by pièces justificatives, which refers to supporting documents or proofs, including those related to état civil, as specified in Article 39.</data>
+  <data key="d7">formal requirement, supporting documents</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="déclarations de la nationalité" target="état civil">
+  <data key="d5">8.0</data>
+  <data key="d6">Les déclarations de la nationalité must be accompanied by pièces justificatives, including those related to état civil, which refers to civil status or vital records, as specified in Article 39.</data>
+  <data key="d7">formal requirement, civil status documents</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Chapitre II" target="décisions relatives aux naturalisations">
+  <data key="d5">9.0</data>
+  <data key="d6">Chapitre II of the law focuses on decisions related to naturalizations, which includes the submission of a demande and the decision-making process by the Président de la République.</data>
+  <data key="d7">naturalization decisions, decision-making process</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="décisions relatives aux naturalisations" target="demande">
+  <data key="d5">8.0</data>
+  <data key="d6">Toute demande de naturalisation must be established in accordance with the provisions of Article 39, as specified in Article 42.</data>
+  <data key="d7">naturalization request, formal requirements</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="décisions relatives aux naturalisations" target="enquête">
+  <data key="d5">9.0</data>
+  <data key="d6">Toute demande de naturalisation is subject to an enquête conducted by the secrétaire d’État à la justice within six months of receiving the request, as specified in Article 42.</data>
+  <data key="d7">investigation process, naturalization request</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="décisions relatives aux naturalisations" target="conditions requises">
+  <data key="d5">8.0</data>
+  <data key="d6">If the conditions requises by the law are not met, the secrétaire d’État à la justice declares the demande irrecevable, as specified in Article 43.</data>
+  <data key="d7">requirements not met, request rejection</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="décisions relatives aux naturalisations" target="secrétaire d’État à la justice">
+  <data key="d5">7.0</data>
+  <data key="d6">The secrétaire d’État à la justice is responsible for declaring the demande irrecevable if the conditions requises are not met, as specified in Article 43.</data>
+  <data key="d7">government official, request rejection</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="décisions relatives aux naturalisations" target="ajournement de la demande">
+  <data key="d5">8.0</data>
+  <data key="d6">The Président de la République has the authority to adjourn the demande, imposing a specific délai or conditions. After the expiration of the délai or fulfillment of the conditions, the individual may submit a new demande, as specified in Article 45.</data>
+  <data key="d7">request postponement, new application</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="ajournement de la demande" target="demande">
+  <data key="d5">7.0</data>
+  <data key="d6">After the ajournement of the demande, the individual has the opportunity to submit a new demande, if deemed appropriate, as specified in Article 45.</data>
+  <data key="d7">new application, request postponement</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="(*)" target="Article 46">
+  <data key="d5">408.0</data>
+  <data key="d6">(*) is a symbol used to indicate a footnote or additional information, which is relevant to the notification process for measures related to the loss of Tunisian nationality, déchéance, retrait de la nationalité tunisienne, and opposition to the acquisition of Tunisian nationality, as specified in Article 46.</data>
+  <data key="d7">footnote, additional information</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Journal Officiel de la République Tunisienne" target="Ministre ou Ministère">
+  <data key="d5">8.0</data>
+  <data key="d6">Legal measures and decisions, including those related to nationality, are published in the Journal Officiel de la République Tunisienne.</data>
+  <data key="d7">legal publication, official announcements</data>
+  <data key="d8">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Journal Officiel de la République Tunisienne" target="Secrétariat du Conseil">
+  <data key="d5">7.0</data>
+  <data key="d6">Les délibérations du conseil sont consignées dans des procès-verbaux qui seront publiés dans le Journal Officiel de la République Tunisienne.</data>
+  <data key="d7">official publication, record keeping</data>
+  <data key="d8">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Tunis" target="15 mai 2020">
+  <data key="d5">12.0</data>
+  <data key="d6">Le présent décret gouvernemental a été signé à Tunis le 15 mai 2020.&lt;SEP&gt;The present governmental decree was signed in Tunis on May 15, 2020.</data>
+  <data key="d7">signing location, date</data>
+  <data key="d8">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Tribunal de première instance" target="nationality dispute">
+  <data key="d5">9.0</data>
+  <data key="d6">The Tribunal de première instance has jurisdiction over nationality disputes and is the court where such disputes are initially heard.</data>
+  <data key="d7">court jurisdiction, civil disputes</data>
+  <data key="d8">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Cour d'appel" target="nationality dispute">
+  <data key="d5">7.0</data>
+  <data key="d6">The Cour d'appel is an appellate court that hears appeals in nationality disputes.</data>
+  <data key="d7">appellate court, civil disputes</data>
+  <data key="d8">chunk-5c18e1f088bdd5bba219b8d8f831c56e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="tribunal de première instance" target="validité ou de la nullité de la déclaration">
+  <data key="d5">9.0</data>
+  <data key="d6">The tribunal de première instance decides on the validity or nullity of the déclaration, after the individual appeals the decision of the secrétaire d’Etat à la justice, as specified in Article 41.</data>
+  <data key="d7">legal decision, validity or nullity</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="tribunal de première instance" target="refus de délivrer un certificat de nationalité">
+  <data key="d5">7.0</data>
+  <data key="d6">The tribunal de première instance is where individuals can appeal the refusal to issue a certificate of Tunisian nationality.</data>
+  <data key="d7">appeal, certificate issuance</data>
+  <data key="d8">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="ministère public" target="validité ou de la nullité de la déclaration">
+  <data key="d5">8.0</data>
+  <data key="d6">The ministère public must be involved in the proceedings before the tribunal de première instance and present motivated conclusions regarding the validity or nullity of the déclaration, as specified in Article 41.</data>
+  <data key="d7">legal proceedings, involvement of ministère public</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="ministère public" target="secrétariat d’État à la justice">
+  <data key="d5">8.0</data>
+  <data key="d6">The ministère public is involved in civil matters and is required to present reasoned conclusions, which are deposited at the secrétariat d’État à la justice.</data>
+  <data key="d7">legal proceedings, document deposition</data>
+  <data key="d8">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="ministère public" target="tribunaux de première instance">
+  <data key="d5">7.0</data>
+  <data key="d6">The tribunaux de première instance make decisions in nationality disputes, which involve the ministère public.</data>
+  <data key="d7">legal decisions, involvement</data>
+  <data key="d8">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="ministère public" target="cours d’appel">
+  <data key="d5">7.0</data>
+  <data key="d6">The cours d’appel make decisions in nationality disputes, which involve the ministère public.</data>
+  <data key="d7">legal decisions, involvement</data>
+  <data key="d8">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="secrétariat d’État à la justice" target="greffiers des tribunaux">
+  <data key="d5">6.0</data>
+  <data key="d6">The greffiers des tribunaux send copies of judgments related to nationality disputes to the secrétariat d’État à la justice.</data>
+  <data key="d7">document transmission, legal proceedings</data>
+  <data key="d8">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="ministre de la justice" target="certificat de nationalité tunisienne">
+  <data key="d5">9.0</data>
+  <data key="d6">The ministre de la justice has the authority to issue certificates of Tunisian nationality.</data>
+  <data key="d7">authority, certificate issuance</data>
+  <data key="d8">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="agents diplomatiques et consulaires" target="certificat de nationalité tunisienne">
+  <data key="d5">8.0</data>
+  <data key="d6">The agents diplomatiques et consulaires have the authority to issue certificates of Tunisian nationality in certain cases.</data>
+  <data key="d7">authority, certificate issuance</data>
+  <data key="d8">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="juges cantonaux" target="certificat de nationalité tunisienne">
+  <data key="d5">8.0</data>
+  <data key="d6">The juges cantonaux have the authority to issue certificates of Tunisian nationality in certain cases.</data>
+  <data key="d7">authority, certificate issuance</data>
+  <data key="d8">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Décret-loi du Chef du Gouvernement n° 2020-17 du 12 mai 2020" target="Chef du Gouvernement">
+  <data key="d5">9.0</data>
+  <data key="d6">The Chef du Gouvernement issued the Décret-loi du Chef du Gouvernement n° 2020-17 du 12 mai 2020.</data>
+  <data key="d7">decree issuance, authority</data>
+  <data key="d8">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Décret-loi du Chef du Gouvernement n° 2020-17 du 12 mai 2020" target="ministre des affaires locales">
+  <data key="d5">7.0</data>
+  <data key="d6">The ministre des affaires locales made a proposal related to the Décret-loi du Chef du Gouvernement n° 2020-17 du 12 mai 2020.</data>
+  <data key="d7">proposal, decree</data>
+  <data key="d8">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Décret-loi du Chef du Gouvernement n° 2020-17 du 12 mai 2020" target="ministre des technologies de la communication et de la transformation digitale">
+  <data key="d5">7.0</data>
+  <data key="d6">The ministre des technologies de la communication et de la transformation digitale made a proposal related to the Décret-loi du Chef du Gouvernement n° 2020-17 du 12 mai 2020.</data>
+  <data key="d7">proposal, decree</data>
+  <data key="d8">chunk-d9020c1579e86e4b60e525a7d08c5515</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Chef du Gouvernement" target="décret Présidentiel n° 2020-19">
+  <data key="d5">18.0</data>
+  <data key="d6">The décret Présidentiel n° 2020-19 is a presidential decree related to the appointment of the Prime Minister and government members in Tunisia.</data>
+  <data key="d7">government appointment, leadership</data>
+  <data key="d8">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Chef du Gouvernement" target="Elyes Fakhfakh">
+  <data key="d5">14.0</data>
+  <data key="d6">Elyes Fakhfakh est le chef du gouvernement qui a contresigné le présent décret gouvernemental.&lt;SEP&gt;Elyes Fakhfakh is the head of government who countersigned the present governmental decree.</data>
+  <data key="d7">government official, decree signing</data>
+  <data key="d8">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Code de la nationalité tunisienne" target="loi n° 63-7">
+  <data key="d5">16.0</data>
+  <data key="d6">The loi n° 63-7 is a specific law that ratifies and modifies the Code de la nationalité tunisienne.</data>
+  <data key="d7">legal framework, modification</data>
+  <data key="d8">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Code de la nationalité tunisienne" target="loi n° 2010-55">
+  <data key="d5">14.0</data>
+  <data key="d6">The loi n° 2010-55 is a specific law that modifies the Code de la nationalité tunisienne.</data>
+  <data key="d7">legal modification, update</data>
+  <data key="d8">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Conseil des ministres" target="décret Présidentiel n° 2020-19">
+  <data key="d5">18.0</data>
+  <data key="d6">The Conseil des ministres is a council of ministers led by the Prime Minister appointed by the décret Présidentiel n° 2020-19.</data>
+  <data key="d7">government council, leadership</data>
+  <data key="d8">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Registre de l’identifiant unique citoyen" target="Unité de gestion du Registre de l’identifiant unique citoyen">
+  <data key="d5">18.0</data>
+  <data key="d6">L'Unité de gestion du Registre de l’identifiant unique citoyen est chargée de gérer le Registre et la base de données de l'état civil.&lt;SEP&gt;The Unité de gestion du Registre de l’identifiant unique citoyen is responsible for managing the Registre and the civil status database.</data>
+  <data key="d7">data management, civil registry</data>
+  <data key="d8">chunk-a901f6427372df9aace6dd43db7488a9</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="ministère chargé des affaires locales" target="Conseil de suivi d’utilisation de l'identifiant unique citoyen">
+  <data key="d5">14.0</data>
+  <data key="d6">Le ministère chargé des affaires locales est responsable de la création du Conseil de suivi d’utilisation de l'identifiant unique citoyen.&lt;SEP&gt;The ministère chargé des affaires locales is responsible for the creation of the Conseil de suivi d’utilisation de l'identifiant unique citoyen.</data>
+  <data key="d7">government oversight, administrative responsibility</data>
+  <data key="d8">chunk-a901f6427372df9aace6dd43db7488a9</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="identifiant unique citoyen" target="décret gouvernemental">
+  <data key="d5">16.0</data>
+  <data key="d6">The identifiant unique citoyen is defined and regulated by the décret gouvernemental.</data>
+  <data key="d7">identification system, legal framework</data>
+  <data key="d8">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Instance nationale de protection des données à caractère personnel" target="loi organique relative à la protection des données à caractère personnel">
+  <data key="d5">20.0</data>
+  <data key="d6">The Instance nationale de protection des données à caractère personnel is responsible for the protection of personal data in Tunisia, as outlined in the loi organique relative à la protection des données à caractère personnel.</data>
+  <data key="d7">data protection, regulatory body</data>
+  <data key="d8">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Instance nationale de protection des données à caractère personnel" target="Registre">
+  <data key="d5">29.0</data>
+  <data key="d6">The Instance nationale de protection des données à caractère personnel oversees the management of the Registre and handles oppositions related to data protection violations.&lt;SEP&gt;The Registre is managed and controlled by the Instance nationale de protection des données à caractère personnel.</data>
+  <data key="d7">data management, regulatory oversight&lt;SEP&gt;data protection, registry management</data>
+  <data key="d8">chunk-e71f13222c8c4bfa0c570eefbe82a3fa&lt;SEP&gt;chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="loi n° 2004-5" target="sécurité informatique">
+  <data key="d5">18.0</data>
+  <data key="d6">The loi n° 2004-5 is a law related to cybersecurity in Tunisia.</data>
+  <data key="d7">cybersecurity, legal framework</data>
+  <data key="d8">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="décret-loi du Chef du Gouvernement n° 2020-17" target="identifiant unique du citoyen">
+  <data key="d5">20.0</data>
+  <data key="d6">The décret-loi du Chef du Gouvernement n° 2020-17 is a decree-law related to the unique citizen identifier in Tunisia.</data>
+  <data key="d7">legal framework, identification system</data>
+  <data key="d8">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="décret n° 2012-1997" target="ministère des technologies de l’information et de la communication">
+  <data key="d5">32.0</data>
+  <data key="d6">The décret n° 2012-1997 is a decree related to the Ministry of Information and Communication Technologies in Tunisia.&lt;SEP&gt;The ministère des technologies de l’information et de la communication is regulated by the décret n° 2012-1997.</data>
+  <data key="d7">government ministry, regulation</data>
+  <data key="d8">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="décret n° 2012-1998" target="ministère des technologies de l’information et de la communication">
+  <data key="d5">16.0</data>
+  <data key="d6">The décret n° 2012-1998 is a decree related to the organization of the Ministry of Information and Communication Technologies in Tunisia.</data>
+  <data key="d7">government ministry, organization</data>
+  <data key="d8">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="décret gouvernemental n° 2016-365" target="ministère des affaires locales">
+  <data key="d5">36.0</data>
+  <data key="d6">The décret gouvernemental n° 2016-365 is a governmental decree related to the creation of the Ministry of Local Affairs in Tunisia.&lt;SEP&gt;The ministère des affaires locales was established by the décret gouvernemental n° 2016-365.</data>
+  <data key="d7">government ministry, establishment</data>
+  <data key="d8">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="décret Présidentiel n° 2020-19" target="ministère des finances">
+  <data key="d5">16.0</data>
+  <data key="d6">The ministère des finances is part of the government appointed by the décret Présidentiel n° 2020-19.</data>
+  <data key="d7">government ministry, appointment</data>
+  <data key="d8">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="décret Présidentiel n° 2020-19" target="Tribunal administratif">
+  <data key="d5">14.0</data>
+  <data key="d6">The Tribunal administratif is under the jurisdiction of the décret Présidentiel n° 2020-19.</data>
+  <data key="d7">administrative court, jurisdiction</data>
+  <data key="d8">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Registre de l'identifiant unique citoyen" target="système d'information">
+  <data key="d5">18.0</data>
+  <data key="d6">The Registre de l'identifiant unique citoyen is a system for recording and managing information related to the unique citizen identifier in Tunisia.</data>
+  <data key="d7">information management, registration system</data>
+  <data key="d8">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Registre de l'identifiant unique citoyen" target="QR code">
+  <data key="d5">16.0</data>
+  <data key="d6">The QR code can be used to store the unique citizen identifier on documents issued by the Registre de l'identifiant unique citoyen.</data>
+  <data key="d7">document identification, information storage</data>
+  <data key="d8">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Registre" target="loi organique relative à la protection des données à caractère personnel">
+  <data key="d5">18.0</data>
+  <data key="d6">The loi organique relative à la protection des données à caractère personnel governs the management and use of data in the Registre.</data>
+  <data key="d7">data protection, legal framework</data>
+  <data key="d8">chunk-7898187e4670a43c7334be2f116a7b11</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Registre" target="Unité de gestion du Registre de l’identifiant unique citoyen">
+  <data key="d5">8.0</data>
+  <data key="d6">The Unité de gestion du Registre de l’identifiant unique citoyen is responsible for managing the Registre de l’identifiant unique citoyen and ensuring compliance with data protection regulations.</data>
+  <data key="d7">registry management, data protection</data>
+  <data key="d8">chunk-e71f13222c8c4bfa0c570eefbe82a3fa</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Unité de gestion du Registre de l’identifiant unique citoyen" target="Centre national de l’informatique">
+  <data key="d5">16.0</data>
+  <data key="d6">Le Centre national de l’informatique est chargé des missions techniques et opérationnelles liées à la gestion du registre, sous la supervision de l’Unité de gestion du Registre de l’identifiant unique citoyen.&lt;SEP&gt;The Centre national de l’informatique is responsible for the technical and operational missions related to the management of the Registre, under the supervision of the Unité de gestion du Registre de l’identifiant unique citoyen.</data>
+  <data key="d7">technical support, data management</data>
+  <data key="d8">chunk-a901f6427372df9aace6dd43db7488a9</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Unité de gestion du Registre de l’identifiant unique citoyen" target="Conseil de suivi d’utilisation de l'identifiant unique citoyen">
+  <data key="d5">18.0</data>
+  <data key="d6">Le Conseil de suivi d’utilisation de l'identifiant unique citoyen veille au bon fonctionnement, à la bonne gestion et utilisation du Registre de l'identifiant unique citoyen.&lt;SEP&gt;The Conseil de suivi d’utilisation de l'identifiant unique citoyen is responsible for ensuring the proper functioning, management, and use of the Registre de l'identifiant unique citoyen.</data>
+  <data key="d7">oversight, data management</data>
+  <data key="d8">chunk-a901f6427372df9aace6dd43db7488a9</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Secrétariat du Conseil" target="Direction Générale de l'Informatique et du Développement des Applications Informatiques">
+  <data key="d5">9.0</data>
+  <data key="d6">Le Secrétariat du Conseil est confié à la Direction Générale de l'Informatique et du Développement des Applications Informatiques pour la gestion administrative du conseil.</data>
+  <data key="d7">administrative management, organizational responsibility</data>
+  <data key="d8">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Secrétariat du Conseil" target="Ministère des Affaires Locales">
+  <data key="d5">8.0</data>
+  <data key="d6">Le Secrétariat du Conseil est confié au Ministère des Affaires Locales pour la gestion administrative du conseil.</data>
+  <data key="d7">administrative management, organizational responsibility</data>
+  <data key="d8">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Secrétariat du Conseil" target="Ministère des Technologies de la Communication et de la Transformation Digitale">
+  <data key="d5">8.0</data>
+  <data key="d6">Le Secrétariat du Conseil est confié au Ministère des Technologies de la Communication et de la Transformation Digitale pour la gestion administrative du conseil.</data>
+  <data key="d7">administrative management, organizational responsibility</data>
+  <data key="d8">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Ministère des Affaires Locales" target="Ministère des Technologies de la Communication et de la Transformation Digitale">
+  <data key="d5">9.0</data>
+  <data key="d6">Le Ministère des Affaires Locales et le Ministère des Technologies de la Communication et de la Transformation Digitale sont chargés de l'exécution du présent décret gouvernemental.</data>
+  <data key="d7">governmental responsibility, execution of decree</data>
+  <data key="d8">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Ministère des Affaires Locales" target="Lotfi Zitoun">
+  <data key="d5">7.0</data>
+  <data key="d6">Lotfi Zitoun est le ministre des affaires locales qui a contresigné le présent décret gouvernemental.</data>
+  <data key="d7">government official, decree signing</data>
+  <data key="d8">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Ministère des Technologies de la Communication et de la Transformation Digitale" target="Mohamed Fadhel Kraiem">
+  <data key="d5">7.0</data>
+  <data key="d6">Mohamed Fadhel Kraiem est le ministre des technologies de la communication et de la transformation digitale qui a contresigné le présent décret gouvernemental.</data>
+  <data key="d7">government official, decree signing</data>
+  <data key="d8">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Lotfi Zitoun" target="Ministère des affaires locales">
+  <data key="d5">7.0</data>
+  <data key="d6">Lotfi Zitoun is the minister of local affairs who countersigned the present governmental decree.</data>
+  <data key="d7">government official, decree signing</data>
+  <data key="d8">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Mohamed Fadhel Kraiem" target="Ministère des technologies de la communication et de la transformation digitale">
+  <data key="d5">7.0</data>
+  <data key="d6">Mohamed Fadhel Kraiem is the minister of technologies of communication and digital transformation who countersigned the present governmental decree.</data>
+  <data key="d7">government official, decree signing</data>
+  <data key="d8">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Secrétariat du conseil" target="Direction Générale de l'informatique et du développement des applications informatiques">
+  <data key="d5">9.0</data>
+  <data key="d6">The Secrétariat du conseil is entrusted to the Direction Générale de l'informatique et du développement des applications informatiques for the administrative management of the council.</data>
+  <data key="d7">administrative management, organizational responsibility</data>
+  <data key="d8">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Secrétariat du conseil" target="Ministère des affaires locales">
+  <data key="d5">8.0</data>
+  <data key="d6">The Secrétariat du conseil is entrusted to the Ministère des affaires locales for the administrative management of the council.</data>
+  <data key="d7">administrative management, organizational responsibility</data>
+  <data key="d8">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Secrétariat du conseil" target="Ministère des technologies de la communication et de la transformation digitale">
+  <data key="d5">8.0</data>
+  <data key="d6">The Secrétariat du conseil is entrusted to the Ministère des technologies de la communication et de la transformation digitale for the administrative management of the council.</data>
+  <data key="d7">administrative management, organizational responsibility</data>
+  <data key="d8">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Secrétariat du conseil" target="Journal officiel de la République tunisienne">
+  <data key="d5">7.0</data>
+  <data key="d6">The deliberations of the council are recorded in minutes that will be published in the Journal officiel de la République tunisienne.</data>
+  <data key="d7">official publication, record keeping</data>
+  <data key="d8">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Ministère des affaires locales" target="Ministère des technologies de la communication et de la transformation digitale">
+  <data key="d5">9.0</data>
+  <data key="d6">The Ministère des affaires locales and the Ministère des technologies de la communication et de la transformation digitale are responsible for the execution of the present governmental decree.</data>
+  <data key="d7">governmental responsibility, execution of decree</data>
+  <data key="d8">chunk-3ce5b2ffae60aa2745b81aa99317375e</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Article 46" target="perte de la nationalité tunisienne">
+  <data key="d5">8.0</data>
+  <data key="d6">Lorsqu’il s’agit de prononcer la perte de la nationalité tunisienne en application des articles 31 et 32, la déchéance ou le retrait de cette nationalité, comme au cas d’opposition du gouvernement à l’acquisition de la nationalité tunisienne, the secrétaire d’Etat à la justice notifies the individual of the measure, as specified in Article 46.</data>
+  <data key="d7">loss of nationality, notification process</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+<edge source="Article 46" target="opposition du gouvernement à l’acquisition de la nationalité tunisienne">
+  <data key="d5">7.0</data>
+  <data key="d6">Lorsqu’il s’agit de prononcer la perte de la nationalité tunisienne en application des articles 31 et 32, la déchéance ou le retrait de cette nationalité, comme au cas d’opposition du gouvernement à l’acquisition de la nationalité tunisienne, the secrétaire d’Etat à la justice notifies the individual of the measure, as specified in Article 46.</data>
+  <data key="d7">loss of nationality, government opposition</data>
+  <data key="d8">chunk-40d19ee233ee3c2bd972c0811c0e0167</data>
+  <data key="d9">unknown_source</data>
+</edge>
+</graph></graphml>
