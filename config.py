@@ -11,7 +11,7 @@ AWS_CONFIG = {
 # Model Configuration
 MODEL_CONFIG = {
     'EMBEDDING_MODEL': "amazon.titan-embed-text-v2:0",
-    'LLM_MODEL': "anthropic.claude-3-haiku-20240307-v1:0",
+    'LLM_MODEL': "anthropic.claude-3-5-sonnet-20240620-v1:0",
     'TEMPERATURE': 0.3
 }
 

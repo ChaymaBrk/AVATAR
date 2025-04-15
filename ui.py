@@ -1,9 +1,10 @@
 import streamlit as st
-from database import add_user, authenticate
+from database import add_user, authenticate, get_user_history, save_chat_history, clear_user_history
 from config import APP_CONFIG
 from langchain_core.messages import HumanMessage, AIMessage
 from utils import detect_language
 import time
+from datetime import datetime
 
 def set_neon_legal_theme():
     """Thème néo-juridique futuriste pour domination du marché"""
@@ -364,8 +365,55 @@ def login_ui():
                         st.session_state.register = True
                         st.rerun()
 
+def display_history_modal():
+    """Modal d'historique dans le style cybernétique"""
+    with st.container():
+        st.markdown("""
+        <div style='text-align: center; margin-bottom: 2rem;'>
+            <h2 style='color: var(--accent);'>
+                <span style='font-family: "Orbitron", sans-serif;'>CONVERSATION HISTORY</span>
+            </h2>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        history = get_user_history(st.session_state.username)
+        
+        if not history:
+            st.markdown("""
+            <div style='text-align: center; color: var(--text-secondary); font-family: "Orbitron", sans-serif;'>
+                NO HISTORY FOUND
+            </div>
+            """, unsafe_allow_html=True)
+            return
+        
+        for idx, (question, answer, timestamp) in enumerate(history, 1):
+            dt = datetime.strptime(timestamp, '%Y-%m-%d %H:%M:%S.%f') if isinstance(timestamp, str) else timestamp
+            formatted_time = dt.strftime('%d/%m/%Y %H:%M')
+            
+            with st.expander(f"SESSION #{idx} - {formatted_time}", expanded=False):
+                st.markdown(f"""
+                <div style='background: linear-gradient(135deg, var(--card-dark) 0%, var(--card) 100%);
+                            padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;
+                            border-left: 3px solid var(--accent);'>
+                    <div style='margin-bottom: 1rem;'>
+                        <span style='color: var(--accent-light); font-weight: 600; font-family: "Orbitron", sans-serif;'>QUERY:</span>
+                        <div style='color: var(--text-main); padding: 0.5rem 0;'>{question}</div>
+                    </div>
+                    <div>
+                        <span style='color: var(--accent-light); font-weight: 600; font-family: "Orbitron", sans-serif;'>RESPONSE:</span>
+                        <div style='color: var(--text-secondary); padding: 0.5rem 0;'>{answer}</div>
+                    </div>
+                </div>
+                """, unsafe_allow_html=True)
+        
+        if st.button("🗑️ PURGE HISTORY", type="secondary"):
+            if clear_user_history(st.session_state.username) > 0:
+                st.success("HISTORY CLEARED SUCCESSFULLY!")
+                time.sleep(1)
+                st.rerun()
+
 def chat_ui(conversation_chain, memory):
-    """Interface de consultation cybernétique"""
+    """Interface de consultation cybernétique avec historique"""
     set_neon_legal_theme()
     
     # Sidebar futuriste
@@ -395,6 +443,12 @@ def chat_ui(conversation_chain, memory):
             </div>
         </div>
         """, unsafe_allow_html=True)
+        
+        # Bouton historique
+        if st.button("📜 VIEW HISTORY", 
+                    use_container_width=True,
+                    key="history_btn"):
+            st.session_state["show_history"] = True
         
         if st.button("⏻ TERMINATE SESSION", 
                     use_container_width=True,
@@ -438,6 +492,14 @@ def chat_ui(conversation_chain, memory):
             <div>v4.2.1 • QUANTUM ENCRYPTION • © 2024</div>
         </div>
         """, unsafe_allow_html=True)
+    
+    # Affichage de l'historique si activé
+    if st.session_state.get("show_history"):
+        display_history_modal()
+        if st.button("← BACK TO CHAT", use_container_width=True):
+            st.session_state["show_history"] = False
+            st.rerun()
+        return
     
     # Zone principale
     cyber_header()
@@ -536,5 +598,6 @@ def chat_ui(conversation_chain, memory):
                 """, unsafe_allow_html=True)
             
             st.session_state.chat_history.append(AIMessage(content=full_response))
+            save_chat_history(st.session_state.username, query, full_response)
         
         memory.save_context({"question": query}, {"output": full_response})
