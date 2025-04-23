@@ -1,7 +1,0 @@
-{
-    "working_dir": "./dickens\\rag_1743587721",
-    "embedding_func_config": {
-        "embedding_dim": 3072,
-        "max_token_size": 8192
-    }
-}
