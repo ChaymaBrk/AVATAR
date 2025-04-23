@@ -4,7 +4,6 @@ from database import (
     firebase_sign_up,
     save_chat_history,
     get_user_history,
-    clear_user_history,
     get_user_threads
 )
 from config import APP_CONFIG
@@ -13,398 +12,277 @@ from utils import detect_language
 import time
 from datetime import datetime
 
-def set_neon_legal_theme():
-    """Thème néo-juridique futuriste pour domination du marché"""
+def set_white_blue_theme():
+    """Simple white and blue theme for clean interface"""
     st.markdown(f"""
     <style>
         :root {{
-            --primary-dark: #0F1A3F;  /* Bleu nocturne */
-            --primary: #1D2B64;
-            --primary-light: #2C3B8B;
-            --secondary: #0A0E1A;  /* Fond spatial */
-            --accent: #00D4FF;  /* Cyan néon */
-            --accent-light: #6BFFFF;
-            --text-main: #E6F1FF;  /* Blanc stellaire */
-            --text-secondary: #8A9EFF;
-            --success: #00FFA3;
-            --warning: #FF2D75;
-            --card-dark: #121A33;
-            --card: #1A2347;
-            --card-light: #232D5A;
-            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            --neon-glow: 0 0 8px rgba(0, 212, 255, 0.8);
+            --primary: #1E88E5;  /* Main blue */
+            --primary-light: #64B5F6;
+            --primary-dark: #0D47A1;
+            --secondary: #F5F5F5;  /* Light gray background */
+            --accent: #2196F3;  /* Accent blue */
+            --text-main: #212121;  /* Dark text */
+            --text-secondary: #757575;
+            --success: #4CAF50;
+            --warning: #FF5722;
+            --card: #FFFFFF;
+            --card-light: #FAFAFA;
+            --border: #E0E0E0;
         }}
         
-        /* Fond immersif */
+        /* Clean white background */
         .stApp {{
-            background: radial-gradient(ellipse at center, var(--secondary) 0%, #050813 100%);
+            background-color: var(--secondary);
             color: var(--text-main);
-            font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
-            min-height: 100vh;
+            font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
         }}
         
-        /* Police high-tech */
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@400;600&display=swap');
+        /* Import clean font */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
         
-        /* Titres futuristes */
+        /* Simple headings */
         h1, h2, h3 {{
-            text-align: center !important;
-            font-family: 'Orbitron', sans-serif;
-            letter-spacing: 0.05em;
-            text-shadow: var(--neon-glow);
+            color: var(--primary-dark) !important;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
         }}
         
         h1 {{
-            color: var(--accent) !important;
-            font-size: 3rem;
-            margin: 2rem 0;
-            background: linear-gradient(90deg, var(--accent), var(--accent-light));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }}
-        
-        h2 {{
-            color: var(--text-main) !important;
+            font-size: 2.5rem;
+            margin: 1.5rem 0;
             border-bottom: 2px solid var(--primary-light);
             padding-bottom: 1rem;
-            margin: 2.5rem auto;
-            width: 80%;
-            font-size: 2rem;
-            position: relative;
         }}
         
-        h2:after {{
-            content: "";
-            position: absolute;
-            bottom: -2px;
-            left: 25%;
-            width: 50%;
-            height: 2px;
-            background: var(--accent);
-            box-shadow: var(--neon-glow);
-        }}
-        
-        /* Sidebar cyber */
+        /* Sidebar styling */
         .css-1d391kg {{
-            background: linear-gradient(180deg, var(--card-dark) 0%, var(--secondary) 100%) !important;
-            border-right: 1px solid var(--primary-light);
-            box-shadow: 8px 0 20px rgba(0,0,0,0.4);
+            background-color: var(--card) !important;
+            border-right: 1px solid var(--border);
         }}
         
-        /* Inputs futuristes */
+        /* Input fields */
         .stTextInput input, .stTextArea textarea {{
-            background-color: rgba(26, 35, 71, 0.7);
+            background-color: var(--card);
             color: var(--text-main);
-            border: 1px solid var(--primary-light);
-            border-radius: 8px;
-            padding: 14px;
-            transition: var(--transition);
-            backdrop-filter: blur(5px);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 12px;
         }}
         
         .stTextInput input:focus, .stTextArea textarea:focus {{
-            border-color: var(--accent);
-            box-shadow: 0 0 0 2px rgba(0, 212, 255, 0.3);
-            background-color: rgba(26, 35, 71, 0.9);
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(30, 136, 229, 0.2);
         }}
         
-        /* Boutons cybernétiques */
+        /* Buttons */
         .stButton>button {{
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            background-color: var(--primary);
             color: white !important;
             border: none;
-            border-radius: 8px;
-            font-weight: 600;
-            padding: 1rem 2rem;
-            transition: var(--transition);
-            box-shadow: 0 4px 15px rgba(29, 43, 100, 0.4);
-            position: relative;
-            overflow: hidden;
-            font-family: 'Orbitron', sans-serif;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            font-size: 0.9rem;
+            border-radius: 4px;
+            font-weight: 500;
+            padding: 0.8rem 1.5rem;
+            transition: all 0.3s ease;
         }}
         
         .stButton>button:hover {{
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 212, 255, 0.4);
+            background-color: var(--primary-dark);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }}
         
-        .stButton>button:active {{
-            transform: translateY(0);
-        }}
-        
-        .stButton>button:before {{
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, 
-                          transparent, 
-                          rgba(0, 212, 255, 0.2), 
-                          transparent);
-            transition: 0.5s;
-        }}
-        
-        .stButton>button:hover:before {{
-            left: 100%;
-        }}
-        
-        /* Messages de chat holographiques */
+        /* Chat messages */
         .stChatMessage {{
-            border-radius: 12px;
-            padding: 1.8rem;
-            margin: 1.5rem 0;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            position: relative;
-            overflow: hidden;
-            border: none;
-            backdrop-filter: blur(5px);
+            border-radius: 8px;
+            padding: 1.2rem;
+            margin: 1rem 0;
+            border: 1px solid var(--border);
         }}
         
-        /* Message utilisateur */
+        /* User message */
         [data-testid="stChatMessage-human"] {{
-            background: linear-gradient(135deg, 
-                          rgba(15, 26, 63, 0.8) 0%, 
-                          rgba(44, 59, 139, 0.6) 100%);
-            border-left: 4px solid var(--accent);
-            margin-right: 15%;
-            border-top-right-radius: 0;
+            background-color: var(--card-light);
+            margin-right: 10%;
         }}
         
-        /* Message AI */
+        /* AI message */
         [data-testid="stChatMessage-ai"] {{
-            background: linear-gradient(135deg, 
-                          rgba(26, 35, 71, 0.8) 0%, 
-                          rgba(35, 45, 90, 0.6) 100%);
-            border-left: 4px solid var(--primary-light);
-            margin-left: 15%;
-            border-top-left-radius: 0;
-            box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+            background-color: var(--card);
+            margin-left: 10%;
+            border-left: 3px solid var(--primary);
         }}
         
-        /* Zone de saisie futuriste */
+        /* Chat input */
         .stChatInputContainer {{
-            background: rgba(18, 26, 51, 0.7);
-            padding: 1.5rem;
-            border-radius: 12px;
-            border: 1px solid var(--primary-light);
-            margin-top: 3rem;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(5px);
+            background-color: var(--card);
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-top: 2rem;
         }}
         
-        /* Animation de chargement cyber */
-        @keyframes cyber-spin {{
-            0% {{ transform: rotate(0deg); opacity: 0.6; }}
-            50% {{ opacity: 1; }}
-            100% {{ transform: rotate(360deg); opacity: 0.6; }}
+        /* Loading spinner */
+        @keyframes spin {{
+            0% {{ transform: rotate(0deg); }}
+            100% {{ transform: rotate(360deg); }}
         }}
         
-        .cyber-loading {{
+        .loading-spinner {{
             display: inline-block;
-            width: 20px;
-            height: 20px;
-            border: 3px solid var(--accent);
+            width: 18px;
+            height: 18px;
+            border: 3px solid var(--primary-light);
+            border-top-color: var(--primary);
             border-radius: 50%;
-            border-top-color: transparent;
-            animation: cyber-spin 1s linear infinite;
-            margin-right: 10px;
+            animation: spin 1s linear infinite;
+            margin-right: 8px;
             vertical-align: middle;
-        }}
-        
-        /* Effet néon */
-        .neon-text {{
-            text-shadow: 0 0 5px var(--accent), 
-                         0 0 10px var(--accent), 
-                         0 0 20px var(--accent);
-            animation: neon-pulse 1.5s infinite alternate;
-        }}
-        
-        @keyframes neon-pulse {{
-            from {{ opacity: 0.8; }}
-            to {{ opacity: 1; }}
         }}
     </style>
     """, unsafe_allow_html=True)
 
-def cyber_header():
-    """En-tête cybernétique avec effets visuels avancés"""
+def simple_header():
+    """Clean header with blue accent"""
     st.markdown("""
-    <div style='text-align: center; margin: 3rem 0 4rem 0; position: relative;'>
-        <div style='position: absolute; 
-                    top: 50%; left: 50%; 
-                    transform: translate(-50%, -50%);
-                    width: 300px; height: 300px;
-                    background: radial-gradient(circle, rgba(0,212,255,0.15) 0%, transparent 70%);
-                    z-index: 0;'>
-        </div>
-        <h1 style='position: relative; z-index: 2; margin-bottom: 0.5rem;'>
-            <span style='color: var(--accent);'>Themis</span>
+    <div style='text-align: center; margin: 2rem 0 3rem 0;'>
+        <h1 style='margin-bottom: 0.5rem;'>
+            <span style='color: var(--primary);'>Themis</span>
             <span style='color: var(--text-main);'>AI</span>
-            <span style='color: var(--accent);'></span>
         </h1>
-        <div style='position: relative; z-index: 2;'>
-            <span style='color: var(--text-secondary); font-size: 1.2rem; letter-spacing: 0.2em;'>
-                LEGAL INTELLIGENCE PLATFORM
-            </span>
-        </div>
-        <div style='position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%);
-                    width: 200px; height: 2px;
-                    background: linear-gradient(90deg, transparent, var(--accent), transparent);
-                    box-shadow: 0 0 10px var(--accent);'>
+        <div style='color: var(--text-secondary); font-size: 1.1rem;'>
+            Legal Intelligence Platform
         </div>
     </div>
     """, unsafe_allow_html=True)
 
-def cyber_loading():
-    """Animation de chargement cybernétique"""
+def loading_indicator():
+    """Simple loading indicator"""
     with st.empty():
-        for i in range(3):
-            dots = "•" * (i + 1)
-            st.markdown(f"""
-            <div style='text-align: center; color: var(--accent); font-family: "Orbitron", sans-serif;'>
-                <span class='cyber-loading'></span>
-                <span>INITIALIZING LEGAL MODULE{dots}</span>
-            </div>
-            """, unsafe_allow_html=True)
-            time.sleep(0.4)
         st.markdown("""
-        <div style='text-align: center; color: var(--success); font-family: "Orbitron", sans-serif;'>
-            <span>SYSTEM READY</span>
+        <div style='text-align: center; color: var(--primary);'>
+            <span class='loading-spinner'></span>
+            <span>Processing...</span>
         </div>
         """, unsafe_allow_html=True)
-        time.sleep(0.3)
 
 def register_ui():
-    """Interface d'inscription cybernétique"""
-    set_neon_legal_theme()
-    cyber_header()
+    """Clean registration interface"""
+    set_white_blue_theme()
+    simple_header()
     
     with st.container():
-        st.subheader("CREATE ACCOUNT")
+        st.subheader("Create Account")
         
         with st.form("register_form", border=False):
             cols = st.columns([1, 3, 1])
             with cols[1]:
-                st.markdown("<div style='height: 20px;'></div>", unsafe_allow_html=True)
-                
-                email = st.text_input("ENTER EMAIL", 
-                                    placeholder="e.g. legal@firm.com",
+                email = st.text_input("Email", 
+                                    placeholder="your@email.com",
                                     key="reg_email")
                 
-                username = st.text_input("ENTER USERNAME", 
-                                       placeholder="e.g. FIRM_ACCESS_01",
+                username = st.text_input("Username", 
+                                       placeholder="Choose a username",
                                        key="reg_username")
                 
-                password = st.text_input("SET SECURITY KEY", 
+                password = st.text_input("Password", 
                                        type="password", 
-                                       placeholder="12 CHARACTER MINIMUM",
+                                       placeholder="Minimum 8 characters",
                                        key="reg_password")
                 
-                confirm = st.text_input("CONFIRM SECURITY KEY", 
+                confirm = st.text_input("Confirm Password", 
                                       type="password", 
-                                      placeholder="RE-ENTER YOUR KEY",
+                                      placeholder="Re-enter your password",
                                       key="reg_confirm")
-                
-                st.markdown("<div style='height: 30px;'></div>", unsafe_allow_html=True)
                 
                 btn_cols = st.columns(2)
                 with btn_cols[0]:
-                    if st.form_submit_button("🚀 ACTIVATE ACCOUNT", use_container_width=True):
+                    if st.form_submit_button("Create Account", use_container_width=True):
                         if email and username and password:
                             if password == confirm:
                                 if len(password) >= 8:
-                                    with st.spinner("SECURING YOUR ACCESS..."):
-                                        cyber_loading()
+                                    with st.spinner("Creating account..."):
+                                        loading_indicator()
                                         try:
                                             uid = firebase_sign_up(email, password, username)
-                                            st.success("ACCOUNT CREATED SUCCESSFULLY!")
+                                            st.success("Account created successfully!")
                                             time.sleep(1)
                                             st.session_state.register = False
                                             st.rerun()
                                         except Exception as e:
                                             st.error(str(e))
                                 else:
-                                    st.error("SECURITY KEY TOO WEAK (MIN 8 CHARACTERS)")
+                                    st.error("Password too weak (min 8 characters)")
                             else:
-                                st.error("SECURITY KEYS DO NOT MATCH")
+                                st.error("Passwords do not match")
                         else:
-                            st.error("ALL FIELDS REQUIRED")
+                            st.error("All fields required")
                 
                 with btn_cols[1]:
-                    if st.form_submit_button("← BACK TO LOGIN", 
+                    if st.form_submit_button("Back to Login", 
                                            use_container_width=True, 
                                            type="secondary"):
                         st.session_state.register = False
                         st.rerun()
 
 def login_ui():
-    """Interface de connexion cybernétique"""
-    set_neon_legal_theme()
-    cyber_header()
+    """Clean login interface"""
+    set_white_blue_theme()
+    simple_header()
     
     with st.container():
-        st.subheader("SECURE ACCESS")
+        st.subheader("Login")
         
         with st.form("login_form", border=False):
             cols = st.columns([1, 3, 1])
             with cols[1]:
-                st.markdown("<div style='height: 20px;'></div>", unsafe_allow_html=True)
-                
-                email = st.text_input("EMAIL", 
-                                    placeholder="ENTER YOUR EMAIL",
+                email = st.text_input("Email", 
+                                    placeholder="your@email.com",
                                     key="login_email")
                 
-                password = st.text_input("SECURITY KEY", 
+                password = st.text_input("Password", 
                                        type="password", 
-                                       placeholder="ENTER YOUR KEY",
+                                       placeholder="Enter your password",
                                        key="login_password")
-                
-                st.markdown("<div style='height: 30px;'></div>", unsafe_allow_html=True)
                 
                 btn_cols = st.columns(2)
                 with btn_cols[0]:
-                    if st.form_submit_button("🔐 AUTHENTICATE", use_container_width=True):
+                    if st.form_submit_button("Login", use_container_width=True):
                         if email and password:
-                            with st.spinner("VERIFYING CREDENTIALS..."):
-                                cyber_loading()
+                            with st.spinner("Authenticating..."):
+                                loading_indicator()
                                 try:
                                     user = firebase_sign_in(email, password)
                                     st.session_state["user"] = user
                                     st.session_state["logged_in"] = True
                                     st.session_state["chat_history"] = []
                                     
-                                    # Récupérer le premier thread par défaut
+                                    # Get default thread
                                     threads = get_user_threads(user['uid'])
                                     if threads:
                                         st.session_state["current_thread"] = next(iter(threads.keys()))
                                     
-                                    st.success("ACCESS GRANTED")
+                                    st.success("Login successful")
                                     time.sleep(0.8)
                                     st.rerun()
                                 except Exception as e:
                                     st.error(str(e))
                         else:
-                            st.error("FIELDS REQUIRED")
+                            st.error("Email and password required")
                 
                 with btn_cols[1]:
-                    if st.form_submit_button("🆕 NEW ACCOUNT", 
+                    if st.form_submit_button("Create Account", 
                                            use_container_width=True, 
                                            type="secondary"):
                         st.session_state.register = True
                         st.rerun()
 
 def display_history_modal():
-    """Modal d'historique dans le style cybernétique"""
+    """Clean history modal"""
     with st.container():
         st.markdown("""
-        <div style='text-align: center; margin-bottom: 2rem;'>
-            <h2 style='color: var(--accent);'>
-                <span style='font-family: "Orbitron", sans-serif;'>CONVERSATION HISTORY</span>
+        <div style='text-align: center; margin-bottom: 1.5rem;'>
+            <h2 style='color: var(--primary);'>
+                Conversation History
             </h2>
         </div>
         """, unsafe_allow_html=True)
@@ -419,11 +297,7 @@ def display_history_modal():
         )
         
         if not history:
-            st.markdown("""
-            <div style='text-align: center; color: var(--text-secondary); font-family: "Orbitron", sans-serif;'>
-                NO HISTORY FOUND
-            </div>
-            """, unsafe_allow_html=True)
+            st.info("No history found")
             return
         
         for idx, (question, answer, timestamp) in enumerate(history, 1):
@@ -433,151 +307,87 @@ def display_history_modal():
             except:
                 formatted_time = "Unknown date"
             
-            with st.expander(f"SESSION #{idx} - {formatted_time}", expanded=False):
+            with st.expander(f"Session #{idx} - {formatted_time}", expanded=False):
                 st.markdown(f"""
-                <div style='background: linear-gradient(135deg, var(--card-dark) 0%, var(--card) 100%);
-                            padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem;
-                            border-left: 3px solid var(--accent);'>
+                <div style='background-color: var(--card-light);
+                            padding: 1.2rem; border-radius: 8px; margin-bottom: 1rem;
+                            border-left: 3px solid var(--primary);'>
                     <div style='margin-bottom: 1rem;'>
-                        <span style='color: var(--accent-light); font-weight: 600; font-family: "Orbitron", sans-serif;'>QUERY:</span>
+                        <span style='color: var(--primary); font-weight: 500;'>Question:</span>
                         <div style='color: var(--text-main); padding: 0.5rem 0;'>{question}</div>
                     </div>
                     <div>
-                        <span style='color: var(--accent-light); font-weight: 600; font-family: "Orbitron", sans-serif;'>RESPONSE:</span>
-                        <div style='color: var(--text-secondary); padding: 0.5rem 0;'>{answer}</div>
+                        <span style='color: var(--primary); font-weight: 500;'>Response:</span>
+                        <div style='color: var(--text-main); padding: 0.5rem 0;'>{answer}</div>
                     </div>
                 </div>
                 """, unsafe_allow_html=True)
         
-        if st.button("🗑️ PURGE HISTORY", type="secondary"):
-            if clear_user_history(
-                st.session_state.user['uid'],
-                st.session_state.current_thread
-            ):
-                st.success("HISTORY CLEARED SUCCESSFULLY!")
-                time.sleep(1)
-                st.rerun()
 
-def chat_ui(conversation_chain, memory):
-    """Interface de consultation cybernétique avec historique"""
-    set_neon_legal_theme()
+def chat_ui(conversation_chain, reviewer_chain, memory):
+    """Clean chat interface with history"""
+    set_white_blue_theme()
     
-    # Sidebar futuriste
+    # Sidebar
     with st.sidebar:
-        st.markdown("""
-        <div style='text-align: center; margin-bottom: 3rem;'>
-            <div style='font-size: 2.5rem; color: var(--accent);'>⚡</div>
-            <h3 style='color: var(--accent-light); margin-top: 0.5rem;'>JURISAIX CORE</h3>
-        </div>
-        """, unsafe_allow_html=True)
-        
         if 'user' in st.session_state:
+            # Compact user profile
             st.markdown(f"""
-            <div style='background: linear-gradient(135deg, var(--card-dark) 0%, var(--card) 100%);
-                        padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem;
-                        border-left: 3px solid var(--accent);
-                        box-shadow: 0 0 15px rgba(0, 212, 255, 0.1);'>
+            <div style='background-color: var(--card-light);
+                        padding: 1rem; border-radius: 8px; margin-bottom: 1rem;
+                        border-left: 2px solid var(--primary);'>
                 <div style='display: flex; align-items: center;'>
-                    <div style='font-size: 1.8rem; margin-right: 1rem; color: var(--accent);'>👨‍⚖️</div>
+                    <div style='margin-right: 1rem; color: var(--primary); font-size: 1.2rem;'>👤</div>
                     <div>
-                        <div style='font-weight: 600; color: var(--text-main); font-size: 1.1rem;'>
+                        <div style='font-weight: 500; color: var(--text-main); line-height: 1.2;'>
                             {st.session_state.user['username']}
                         </div>
-                        <div style='font-size: 0.8rem; color: var(--text-secondary); letter-spacing: 0.05em;'>
-                            PREMIUM ACCESS • VERIFIED
+                        <div style='font-size: 0.8rem; color: var(--text-secondary);'>
+                            {st.session_state.user['email']}
                         </div>
                     </div>
                 </div>
             </div>
             """, unsafe_allow_html=True)
-        
-        # Gestion des threads
-        if 'user' in st.session_state:
-            threads = get_user_threads(st.session_state.user['uid'])
-            if threads:
-                st.subheader("YOUR THREADS")
-                for thread_id, thread_data in threads.items():
-                    if st.button(
-                        thread_data.get('thread_name', 'Unnamed Thread'),
-                        key=f"thread_{thread_id}",
-                        use_container_width=True
-                    ):
-                        st.session_state.current_thread = thread_id
-                        st.rerun()
-        
-        # Bouton historique
-        if st.button("📜 VIEW HISTORY", 
-                    use_container_width=True,
-                    key="history_btn"):
-            st.session_state["show_history"] = True
-        
-        if st.button("⏻ TERMINATE SESSION", 
-                    use_container_width=True,
-                    key="logout_btn"):
-            st.session_state.clear()
-            st.rerun()
-        
+
+        # Compact button row
+        col1, col2 = st.columns([1, 1])
+        with col1:
+            if st.button("History", 
+                        use_container_width=True,
+                        help="View chat history",
+                        key="history_btn"):
+                st.session_state["show_history"] = True
+        with col2:
+            if st.button("Logout", 
+                        use_container_width=True,
+                        type="secondary",
+                        help="Logout from account",
+                        key="logout_btn"):
+                st.session_state.clear()
+                st.rerun()
+
         st.markdown("---")
-        
-        st.markdown("""
-        <div style='margin-bottom: 2rem;'>
-            <h4 style='color: var(--accent-light); margin-bottom: 1rem; 
-                        font-family: "Orbitron", sans-serif; letter-spacing: 0.05em;'>
-                📡 KNOWLEDGE MODULES
-            </h4>
-            <div style='background: linear-gradient(135deg, var(--card) 0%, var(--card-light) 100%);
-                        padding: 1.2rem; border-radius: 10px;
-                        box-shadow: 0 0 10px rgba(0, 212, 255, 0.1);'>
-                <div style='display: flex; align-items: center; margin-bottom: 1rem;'>
-                    <div style='margin-right: 1rem; font-size: 1.2rem;'>🌐</div>
-                    <div>GLOBAL LEGISLATION</div>
-                </div>
-                <div style='display: flex; align-items: center; margin-bottom: 1rem;'>
-                    <div style='margin-right: 1rem; font-size: 1.2rem;'>🔍</div>
-                    <div>PRECEDENT ANALYSIS</div>
-                </div>
-                <div style='display: flex; align-items: center;'>
-                    <div style='margin-right: 1rem; font-size: 1.2rem;'>⚖️</div>
-                    <div>JURISDICTIONAL AI</div>
-                </div>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
-        
-        st.markdown("---")
-        
-        st.markdown("""
-        <div style='text-align: center; color: var(--text-secondary); font-size: 0.7rem; 
-                    margin-top: 3rem; letter-spacing: 0.05em;'>
-            <div style='margin-bottom: 0.5rem;'>JURISAIX LEGAL TECHNOLOGY</div>
-            <div>v4.2.1 • QUANTUM ENCRYPTION • © 2024</div>
-        </div>
-        """, unsafe_allow_html=True)
     
-    # Affichage de l'historique si activé
+    # Show history if activated
     if st.session_state.get("show_history"):
         display_history_modal()
-        if st.button("← BACK TO CHAT", use_container_width=True):
+        if st.button("← Back to Chat", use_container_width=True):
             st.session_state["show_history"] = False
             st.rerun()
         return
     
-    # Zone principale
-    cyber_header()
+    # Main area
+    simple_header()
     
-    # Historique de consultation
+    # Chat history
     for message in st.session_state.get("chat_history", []):
         if isinstance(message, HumanMessage):
             with st.chat_message("user"):
                 st.markdown(f"""
-                <div style='display: flex; align-items: flex-start; margin-bottom: 0.8rem;'>
-                    <div style='font-size: 1.5rem; margin-right: 1rem; color: var(--accent);'>👤</div>
+                <div style='display: flex; align-items: flex-start;'>
+                    <div style='margin-right: 1rem; color: var(--primary);'>👤</div>
                     <div>
-                        <div style='font-weight: 600; color: var(--accent); 
-                                    font-family: "Orbitron", sans-serif; letter-spacing: 0.05em;
-                                    margin-bottom: 0.5rem;'>
-                            USER QUERY
-                        </div>
                         <div style='color: var(--text-main); line-height: 1.6;'>
                             {message.content}
                         </div>
@@ -587,14 +397,9 @@ def chat_ui(conversation_chain, memory):
         else:
             with st.chat_message("assistant"):
                 st.markdown(f"""
-                <div style='display: flex; align-items: flex-start; margin-bottom: 0.8rem;'>
-                    <div style='font-size: 1.5rem; margin-right: 1rem; color: var(--accent-light);'>⚡</div>
+                <div style='display: flex; align-items: flex-start;'>
+                    <div style='margin-right: 1rem; color: var(--primary);'>⚖️</div>
                     <div>
-                        <div style='font-weight: 600; color: var(--accent-light); 
-                                    font-family: "Orbitron", sans-serif; letter-spacing: 0.05em;
-                                    margin-bottom: 0.5rem;'>
-                            JURISAIX RESPONSE
-                        </div>
                         <div style='color: var(--text-main); line-height: 1.6;'>
                             {message.content}
                         </div>
@@ -602,23 +407,18 @@ def chat_ui(conversation_chain, memory):
                 </div>
                 """, unsafe_allow_html=True)
     
-    # Interface de requête
-    query = st.chat_input("ENTER LEGAL QUERY...")
+    # Chat input
+    query = st.chat_input("Enter your legal question...")
     if query and st.session_state.get("logged_in") and st.session_state.get("current_thread"):
-        # Enregistrement de la requête
+        # Save user query
         st.session_state.chat_history.append(HumanMessage(content=query))
         
-        # Affichage de la requête utilisateur
+        # Show user message
         with st.chat_message("user"):
             st.markdown(f"""
-            <div style='display: flex; align-items: flex-start; margin-bottom: 0.8rem;'>
-                <div style='font-size: 1.5rem; margin-right: 1rem; color: var(--accent);'>👤</div>
+            <div style='display: flex; align-items: flex-start;'>
+                <div style='margin-right: 1rem; color: var(--primary);'>👤</div>
                 <div>
-                    <div style='font-weight: 600; color: var(--accent); 
-                                font-family: "Orbitron", sans-serif; letter-spacing: 0.05em;
-                                margin-bottom: 0.5rem;'>
-                        USER QUERY
-                    </div>
                     <div style='color: var(--text-main); line-height: 1.6;'>
                         {query}
                     </div>
@@ -626,16 +426,12 @@ def chat_ui(conversation_chain, memory):
             </div>
             """, unsafe_allow_html=True)
         
-        # Réponse du système avec effet de streaming
+        # System response
         with st.chat_message("assistant"):
             response_placeholder = st.empty()
             full_response = ""
             
-            # Animation pendant le chargement
-            with st.spinner(""):
-                cyber_loading()
-            
-            # Simulation de streaming
+            # Stream response
             for chunk in conversation_chain.stream({
                 "question": query,
                 "chat_history": st.session_state.chat_history,
@@ -643,14 +439,9 @@ def chat_ui(conversation_chain, memory):
             }):
                 full_response += chunk
                 response_placeholder.markdown(f"""
-                <div style='display: flex; align-items: flex-start; margin-bottom: 0.8rem;'>
-                    <div style='font-size: 1.5rem; margin-right: 1rem; color: var(--accent-light);'>⚡</div>
+                <div style='display: flex; align-items: flex-start;'>
+                    <div style='margin-right: 1rem; color: var(--primary);'>⚖️</div>
                     <div>
-                        <div style='font-weight: 600; color: var(--accent-light); 
-                                    font-family: "Orbitron", sans-serif; letter-spacing: 0.05em;
-                                    margin-bottom: 0.5rem;'>
-                            JURISAIX RESPONSE
-                        </div>
                         <div style='color: var(--text-main); line-height: 1.6;'>
                             {full_response}
                         </div>
@@ -660,7 +451,7 @@ def chat_ui(conversation_chain, memory):
             
             st.session_state.chat_history.append(AIMessage(content=full_response))
             
-            # Sauvegarde dans Firebase
+            # Save to Firebase
             save_chat_history(
                 st.session_state.user['uid'],
                 st.session_state.current_thread,

@@ -13,7 +13,8 @@ from services import (
     load_all_indices,
     load_faiss_indices,
     merge_indices,
-    create_conversation_chain
+    create_conversation_chain,
+    create_reviewer_chain
 )
 from database import initialize_firebase
 from ui import login_ui, register_ui, chat_ui
@@ -52,6 +53,8 @@ def init_session_state():
         st.session_state.retriever = None
     if "conversation" not in st.session_state:
         st.session_state.conversation = None
+    if "reviewer" not in st.session_state:
+        st.session_state.reviewer = None
     if "memory" not in st.session_state:
         from langchain.memory import ConversationBufferMemory
         st.session_state.memory = ConversationBufferMemory(
@@ -93,6 +96,7 @@ def main():
                     st.session_state.retriever, 
                     bedrock_client
                 )
+                st.session_state.reviewer = create_reviewer_chain(bedrock_client)
                 st.session_state.resources_ready = True
     
     if not st.session_state.get("logged_in"):
@@ -103,7 +107,8 @@ def main():
     else:
         if st.session_state.resources_ready:
             chat_ui(
-                st.session_state.conversation, 
+                st.session_state.conversation,
+                st.session_state.reviewer,
                 st.session_state.memory
             )
         else:
