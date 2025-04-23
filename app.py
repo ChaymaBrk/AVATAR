@@ -15,11 +15,11 @@ from services import (
     merge_indices,
     create_conversation_chain
 )
-from database import init_db
+from database import initialize_firebase
 from ui import login_ui, register_ui, chat_ui
 
-# Initialisation de la base de données
-init_db()
+# Initialisation de Firebase
+db = initialize_firebase()
 
 # Initialisation des clients AWS
 @st.cache_resource
@@ -32,14 +32,16 @@ bedrock_client, s3_client = initialize_clients()
 
 # Initialisation de l'état de session
 def init_session_state():
-    if "username" not in st.session_state:
-        st.session_state.username = None
+    if "user" not in st.session_state:
+        st.session_state.user = None
     if "logged_in" not in st.session_state:
         st.session_state.logged_in = False
     if "register" not in st.session_state:
         st.session_state.register = False
     if "show_history" not in st.session_state:
         st.session_state.show_history = False
+    if "current_thread" not in st.session_state:
+        st.session_state.current_thread = None
     
     # Chat states
     if "chat_history" not in st.session_state:
@@ -108,5 +110,5 @@ def main():
             st.warning("Les ressources sont en cours de chargement...")
             st.spinner("Finalisation en cours...")
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     main()

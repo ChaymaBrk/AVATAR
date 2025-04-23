@@ -1,5 +1,12 @@
 import streamlit as st
-from database import add_user, authenticate, get_user_history, save_chat_history, clear_user_history
+from database import (
+    firebase_sign_in, 
+    firebase_sign_up,
+    save_chat_history,
+    get_user_history,
+    clear_user_history,
+    get_user_threads
+)
 from config import APP_CONFIG
 from langchain_core.messages import HumanMessage, AIMessage
 from utils import detect_language
@@ -285,7 +292,11 @@ def register_ui():
             with cols[1]:
                 st.markdown("<div style='height: 20px;'></div>", unsafe_allow_html=True)
                 
-                username = st.text_input("ENTER USER ID", 
+                email = st.text_input("ENTER EMAIL", 
+                                    placeholder="e.g. legal@firm.com",
+                                    key="reg_email")
+                
+                username = st.text_input("ENTER USERNAME", 
                                        placeholder="e.g. FIRM_ACCESS_01",
                                        key="reg_username")
                 
@@ -294,20 +305,35 @@ def register_ui():
                                        placeholder="12 CHARACTER MINIMUM",
                                        key="reg_password")
                 
+                confirm = st.text_input("CONFIRM SECURITY KEY", 
+                                      type="password", 
+                                      placeholder="RE-ENTER YOUR KEY",
+                                      key="reg_confirm")
+                
                 st.markdown("<div style='height: 30px;'></div>", unsafe_allow_html=True)
                 
                 btn_cols = st.columns(2)
                 with btn_cols[0]:
                     if st.form_submit_button("🚀 ACTIVATE ACCOUNT", use_container_width=True):
-                        if username and password:
-                            if len(password) >= 8:
-                                with st.spinner("SECURING YOUR ACCESS..."):
-                                    cyber_loading()
-                                    add_user(username, password)
+                        if email and username and password:
+                            if password == confirm:
+                                if len(password) >= 8:
+                                    with st.spinner("SECURING YOUR ACCESS..."):
+                                        cyber_loading()
+                                        try:
+                                            uid = firebase_sign_up(email, password, username)
+                                            st.success("ACCOUNT CREATED SUCCESSFULLY!")
+                                            time.sleep(1)
+                                            st.session_state.register = False
+                                            st.rerun()
+                                        except Exception as e:
+                                            st.error(str(e))
+                                else:
+                                    st.error("SECURITY KEY TOO WEAK (MIN 8 CHARACTERS)")
                             else:
-                                st.error("SECURITY KEY TOO WEAK")
+                                st.error("SECURITY KEYS DO NOT MATCH")
                         else:
-                            st.error("FIELDS REQUIRED")
+                            st.error("ALL FIELDS REQUIRED")
                 
                 with btn_cols[1]:
                     if st.form_submit_button("← BACK TO LOGIN", 
@@ -329,9 +355,9 @@ def login_ui():
             with cols[1]:
                 st.markdown("<div style='height: 20px;'></div>", unsafe_allow_html=True)
                 
-                username = st.text_input("USER ID", 
-                                       placeholder="ENTER YOUR ID",
-                                       key="login_username")
+                email = st.text_input("EMAIL", 
+                                    placeholder="ENTER YOUR EMAIL",
+                                    key="login_email")
                 
                 password = st.text_input("SECURITY KEY", 
                                        type="password", 
@@ -343,18 +369,25 @@ def login_ui():
                 btn_cols = st.columns(2)
                 with btn_cols[0]:
                     if st.form_submit_button("🔐 AUTHENTICATE", use_container_width=True):
-                        if username and password:
+                        if email and password:
                             with st.spinner("VERIFYING CREDENTIALS..."):
                                 cyber_loading()
-                                if authenticate(username, password):
-                                    st.session_state["username"] = username
+                                try:
+                                    user = firebase_sign_in(email, password)
+                                    st.session_state["user"] = user
                                     st.session_state["logged_in"] = True
                                     st.session_state["chat_history"] = []
+                                    
+                                    # Récupérer le premier thread par défaut
+                                    threads = get_user_threads(user['uid'])
+                                    if threads:
+                                        st.session_state["current_thread"] = next(iter(threads.keys()))
+                                    
                                     st.success("ACCESS GRANTED")
                                     time.sleep(0.8)
                                     st.rerun()
-                                else:
-                                    st.error("INVALID CREDENTIALS")
+                                except Exception as e:
+                                    st.error(str(e))
                         else:
                             st.error("FIELDS REQUIRED")
                 
@@ -376,7 +409,14 @@ def display_history_modal():
         </div>
         """, unsafe_allow_html=True)
         
-        history = get_user_history(st.session_state.username)
+        if not st.session_state.get("current_thread"):
+            st.warning("No active thread selected")
+            return
+            
+        history = get_user_history(
+            st.session_state.user['uid'],
+            st.session_state.current_thread
+        )
         
         if not history:
             st.markdown("""
@@ -387,8 +427,11 @@ def display_history_modal():
             return
         
         for idx, (question, answer, timestamp) in enumerate(history, 1):
-            dt = datetime.strptime(timestamp, '%Y-%m-%d %H:%M:%S.%f') if isinstance(timestamp, str) else timestamp
-            formatted_time = dt.strftime('%d/%m/%Y %H:%M')
+            try:
+                dt = datetime.fromisoformat(timestamp) if isinstance(timestamp, str) else timestamp
+                formatted_time = dt.strftime('%d/%m/%Y %H:%M')
+            except:
+                formatted_time = "Unknown date"
             
             with st.expander(f"SESSION #{idx} - {formatted_time}", expanded=False):
                 st.markdown(f"""
@@ -407,7 +450,10 @@ def display_history_modal():
                 """, unsafe_allow_html=True)
         
         if st.button("🗑️ PURGE HISTORY", type="secondary"):
-            if clear_user_history(st.session_state.username) > 0:
+            if clear_user_history(
+                st.session_state.user['uid'],
+                st.session_state.current_thread
+            ):
                 st.success("HISTORY CLEARED SUCCESSFULLY!")
                 time.sleep(1)
                 st.rerun()
@@ -425,24 +471,39 @@ def chat_ui(conversation_chain, memory):
         </div>
         """, unsafe_allow_html=True)
         
-        st.markdown(f"""
-        <div style='background: linear-gradient(135deg, var(--card-dark) 0%, var(--card) 100%);
-                    padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem;
-                    border-left: 3px solid var(--accent);
-                    box-shadow: 0 0 15px rgba(0, 212, 255, 0.1);'>
-            <div style='display: flex; align-items: center;'>
-                <div style='font-size: 1.8rem; margin-right: 1rem; color: var(--accent);'>👨‍⚖️</div>
-                <div>
-                    <div style='font-weight: 600; color: var(--text-main); font-size: 1.1rem;'>
-                        {st.session_state.username}
-                    </div>
-                    <div style='font-size: 0.8rem; color: var(--text-secondary); letter-spacing: 0.05em;'>
-                        PREMIUM ACCESS • VERIFIED
+        if 'user' in st.session_state:
+            st.markdown(f"""
+            <div style='background: linear-gradient(135deg, var(--card-dark) 0%, var(--card) 100%);
+                        padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem;
+                        border-left: 3px solid var(--accent);
+                        box-shadow: 0 0 15px rgba(0, 212, 255, 0.1);'>
+                <div style='display: flex; align-items: center;'>
+                    <div style='font-size: 1.8rem; margin-right: 1rem; color: var(--accent);'>👨‍⚖️</div>
+                    <div>
+                        <div style='font-weight: 600; color: var(--text-main); font-size: 1.1rem;'>
+                            {st.session_state.user['username']}
+                        </div>
+                        <div style='font-size: 0.8rem; color: var(--text-secondary); letter-spacing: 0.05em;'>
+                            PREMIUM ACCESS • VERIFIED
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        """, unsafe_allow_html=True)
+            """, unsafe_allow_html=True)
+        
+        # Gestion des threads
+        if 'user' in st.session_state:
+            threads = get_user_threads(st.session_state.user['uid'])
+            if threads:
+                st.subheader("YOUR THREADS")
+                for thread_id, thread_data in threads.items():
+                    if st.button(
+                        thread_data.get('thread_name', 'Unnamed Thread'),
+                        key=f"thread_{thread_id}",
+                        use_container_width=True
+                    ):
+                        st.session_state.current_thread = thread_id
+                        st.rerun()
         
         # Bouton historique
         if st.button("📜 VIEW HISTORY", 
@@ -543,7 +604,7 @@ def chat_ui(conversation_chain, memory):
     
     # Interface de requête
     query = st.chat_input("ENTER LEGAL QUERY...")
-    if query and st.session_state.get("logged_in"):
+    if query and st.session_state.get("logged_in") and st.session_state.get("current_thread"):
         # Enregistrement de la requête
         st.session_state.chat_history.append(HumanMessage(content=query))
         
@@ -598,6 +659,13 @@ def chat_ui(conversation_chain, memory):
                 """, unsafe_allow_html=True)
             
             st.session_state.chat_history.append(AIMessage(content=full_response))
-            save_chat_history(st.session_state.username, query, full_response)
+            
+            # Sauvegarde dans Firebase
+            save_chat_history(
+                st.session_state.user['uid'],
+                st.session_state.current_thread,
+                query,
+                full_response
+            )
         
         memory.save_context({"question": query}, {"output": full_response})
